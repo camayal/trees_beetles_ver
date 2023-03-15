@@ -1,0 +1,587 @@
+IQ-TREE 2.2.0.3 COVID-edition built Aug  2 2022
+
+Input file name: ./Multigenes/selected2.nex
+Type of analysis: ModelFinder + tree reconstruction + ultrafast bootstrap (1000 replicates)
+Random seed number: 851246
+
+REFERENCES
+----------
+
+To cite IQ-TREE please use:
+
+Bui Quang Minh, Heiko A. Schmidt, Olga Chernomor, Dominik Schrempf,
+Michael D. Woodhams, Arndt von Haeseler, and Robert Lanfear (2020)
+IQ-TREE 2: New models and efficient methods for phylogenetic inference
+in the genomic era. Mol. Biol. Evol., in press.
+https://doi.org/10.1093/molbev/msaa015
+
+To cite ModelFinder please use: 
+
+Subha Kalyaanamoorthy, Bui Quang Minh, Thomas KF Wong, Arndt von Haeseler,
+and Lars S Jermiin (2017) ModelFinder: Fast model selection for
+accurate phylogenetic estimates. Nature Methods, 14:587–589.
+https://doi.org/10.1038/nmeth.4285
+
+Since you used ultrafast bootstrap (UFBoot) please also cite: 
+
+Diep Thi Hoang, Olga Chernomor, Arndt von Haeseler, Bui Quang Minh,
+and Le Sy Vinh (2018) UFBoot2: Improving the ultrafast bootstrap
+approximation. Mol. Biol. Evol., 35:518–522.
+https://doi.org/10.1093/molbev/msx281
+
+SEQUENCE ALIGNMENT
+------------------
+
+Input data: 105 sequences with 6837 nucleotide sites
+Number of constant sites: 5358 (= 78.3677% of all sites)
+Number of invariant (constant or ambiguous constant) sites: 5358 (= 78.3677% of all sites)
+Number of parsimony informative sites: 1165
+Number of distinct site patterns: 1686
+
+ModelFinder
+-----------
+
+Best-fit model according to BIC: GTR+F+I+G4
+
+List of models sorted by BIC scores: 
+
+Model                  LogL         AIC      w-AIC        AICc     w-AICc         BIC      w-BIC
+GTR+F+I+G4       -32395.914   65225.828 +        1   65240.122 +        1   66707.961 +        1
+SYM+I+G4         -32458.954   65345.907 - 8.42e-27   65359.803 - 1.03e-26   66807.549 - 2.37e-22
+GTR+F+G4         -32606.091   65644.181 - 1.43e-91   65658.342 - 1.53e-91   67119.484 - 4.35e-90
+TVM+F+I+G4       -32618.705   65669.410 - 4.76e-97   65683.571 - 5.09e-97   67144.712 - 1.45e-95
+TVMe+I+G4        -32638.507   65703.013 - 2.4e-104   65716.778 - 3.13e-104   67157.825 - 2.06e-98
+TIM+F+I+G4       -32638.650   65707.301 - 2.82e-105   65721.329 - 3.22e-105   67175.773 - 2.6e-102
+TIM2+F+I+G4      -32676.778   65783.556 - 7.78e-122   65797.584 - 8.89e-122   67252.028 - 7.2e-119
+TIMe+I+G4        -32832.406   66088.813 - 4.03e-188   66102.447 - 5.61e-188   67536.795 - 1.05e-180
+TIM2e+I+G4       -32868.278   66160.556 - 1.06e-203   66174.190 - 1.48e-203   67608.538 - 2.77e-196
+K3Pu+F+I+G4      -32866.529   66161.058 - 8.27e-204   66174.954 - 1.01e-203   67622.700 - 2.33e-199
+TIM3+F+I+G4      -32872.545   66175.091 - 7.42e-207   66189.119 - 8.47e-207   67643.563 - 6.86e-204
+TPM2u+F+I+G4     -32891.299   66210.599 - 1.44e-214   66224.495 - 1.76e-214   67672.241 - 4.07e-210
+K3P+I+G4         -33017.120   66456.240 - 6.6e-268   66469.744 - 9.8e-268   67897.392 - 5.23e-259
+TPM2+I+G4        -33022.730   66467.461 - 2.42e-270   66480.965 - 3.59e-270   67908.613 - 1.91e-261
+TIM3e+I+G4       -33053.826   66531.652 - 2.78e-284   66545.286 - 3.87e-284   67979.634 - 7.24e-277
+TN+F+I+G4        -33049.750   66527.499 - 2.22e-283   66541.395 - 2.7e-283   67989.142 - 6.24e-279
+TPM3u+F+I+G4     -33107.283   66642.566 - 2.29e-308   66656.462 - 2.79e-308   68104.208 - 6.44e-304
+TPM3+I+G4        -33263.602   66949.205 -        0   66962.709 -        0   68390.357 -        0
+HKY+F+I+G4       -33279.410   66984.821 -        0   66998.585 -        0   68439.633 -        0
+GTR+F+I          -33301.165   67034.329 -        0   67048.490 -        0   68509.632 -        0
+TNe+I+G4         -33337.641   67097.283 -        0   67110.787 -        0   68538.435 -        0
+K2P+I+G4         -33525.225   67470.450 -        0   67483.824 -        0   68904.771 -        0
+F81+F+I+G4       -33533.961   67491.922 -        0   67505.556 -        0   68939.904 -        0
+JC+I+G4          -33727.108   67872.215 -        0   67885.461 -        0   69299.707 -        0
+GTR+F            -37454.668   75339.336 -        0   75353.364 -        0   76807.808 -        0
+
+AIC, w-AIC   : Akaike information criterion scores and weights.
+AICc, w-AICc : Corrected AIC scores and weights.
+BIC, w-BIC   : Bayesian information criterion scores and weights.
+
+Plus signs denote the 95% confidence sets.
+Minus signs denote significant exclusion.
+
+SUBSTITUTION PROCESS
+--------------------
+
+Model of substitution: GTR+F+I+G4
+
+Rate parameter R:
+
+  A-C: 1.7607
+  A-G: 4.6657
+  A-T: 9.7620
+  C-G: 1.7908
+  C-T: 14.6783
+  G-T: 1.0000
+
+State frequencies: (empirical counts from alignment)
+
+  pi(A) = 0.2872
+  pi(C) = 0.2129
+  pi(G) = 0.2305
+  pi(T) = 0.2694
+
+Rate matrix Q:
+
+  A   -0.9429   0.08664    0.2486    0.6077
+  C    0.1168    -1.126   0.09541    0.9137
+  G    0.3096   0.08812     -0.46   0.06225
+  T    0.6478    0.7223   0.05328    -1.423
+
+Model of rate heterogeneity: Invar+Gamma with 4 categories
+Proportion of invariable sites: 0.574
+Gamma shape alpha: 0.7481
+
+ Category  Relative_rate  Proportion
+  0         0              0.574
+  1         0.1983         0.1065
+  2         0.9047         0.1065
+  3         2.21           0.1065
+  4         6.077          0.1065
+Relative rates are computed as MEAN of the portion of the Gamma distribution falling in the category.
+
+MAXIMUM LIKELIHOOD TREE
+-----------------------
+
+Log-likelihood of the tree: -32215.2388 (s.e. 736.4264)
+Unconstrained log-likelihood (without tree): -35380.6559
+Number of free parameters (#branches + #model parameters): 217
+Akaike information criterion (AIC) score: 64864.4776
+Corrected Akaike information criterion (AICc) score: 64878.7716
+Bayesian information criterion (BIC) score: 66346.6103
+
+Total tree length (sum of branch lengths): 3.9343
+Sum of internal branch lengths: 1.7051 (43.3402% of tree length)
+
+WARNING: 11 near-zero internal branches (<0.0001) should be treated with caution
+         Such branches are denoted by '**' in the figure below
+
+NOTE: Tree is UNROOTED although outgroup taxon 'Aphodius_sp_3' is drawn at root
+Numbers in parentheses are  ultrafast bootstrap support (%)
+
++---Aphodius_sp_3
+|
+|                                                +--Ataenius_sp
+|             +----------------------------------| (100)
+|             |                                  |                 +**Ataenius_opatroides
+|             |                                  |              +**| (91)
+|             |                                  |              |  +--Ataenius_sp4
+|             |                                  |           +--| (100)
+|             |                                  |           |  +--Ataenius_sp5
+|             |                                  |        +**| (42)
+|             |                                  |        |  +--Ataenius_sp7
+|             |                                  |     +**| (11)
+|             |                                  |     |  +--Ataenius_sp6
+|             |                                  |  +**| (17)
+|             |                                  |  |  +**Ataenius_sp2
+|             |                                  +--| (59)
+|             |                                     +**Ataenius_sp3
+|     +-------| (99)
+|     |       |                           +**Ateuchus_chrysopygus
+|     |       |                        +--| (70)
+|     |       |                        |  +**Ateuchus_sp1
+|     |       |                     +--| (69)
+|     |       |                     |  +--Ateuchus_floridensis
+|     |       |                  +--| (67)
+|     |       |                  |  +---Ateuchus_ecuadorensis
+|     |       |              +---| (100)
+|     |       |              |   |  +--Ateuchus_sp
+|     |       |              |   +**| (51)
+|     |       |              |      +--Ateuchus_viduus
+|     |       |          +---| (77)
+|     |       |          |   |                       +---Canthon_aequinoctialis
+|     |       |          |   |                    +--| (92)
+|     |       |          |   |                    |  +-------Canthon_sp_3
+|     |       |          |   |                 +--| (50)
+|     |       |          |   |                 |  +----Canthon_quinquemaculatus
+|     |       |          |   |              +--| (54)
+|     |       |          |   |              |  |        +--Canthon_deyrollei
+|     |       |          |   |              |  |     +--| (84)
+|     |       |          |   |              |  |     |  +**Canthon_sp_2
+|     |       |          |   |              |  |  +--| (88)
+|     |       |          |   |              |  |  |  +--Canthon_indigaceus
+|     |       |          |   |              |  +--| (70)
+|     |       |          |   |              |     +----Canthon_perseverans
+|     |       |          |   |           +--| (42)
+|     |       |          |   |           |  |  +----------Canthon_luteicollis
+|     |       |          |   |           |  +--| (77)
+|     |       |          |   |           |     +----Canthon_viridis
+|     |       |          |   |        +--| (77)
+|     |       |          |   |        |  |  +-----Canthon_cyanellus
+|     |       |          |   |        |  +--| (100)
+|     |       |          |   |        |     |  +----Canthon_lamprimus
+|     |       |          |   |        |     +--| (98)
+|     |       |          |   |        |        |   +**Canthon_sp_1
+|     |       |          |   |        |        +---| (100)
+|     |       |          |   |        |            +--Canthon_sp_4
+|     |       |          |   |     +--| (86)
+|     |       |          |   |     |  |     +--Canthon_fulgidus
+|     |       |          |   |     |  +-----| (88)
+|     |       |          |   |     |        +----Canthon_smaragdulus
+|     |       |          |   |  +--| (81)
+|     |       |          |   |  |  |                  +**Digitonthophagus_gazella_3
+|     |       |          |   |  |  |               +--| (94)
+|     |       |          |   |  |  |               |  +--Digitonthophagus_sp
+|     |       |          |   |  |  |            +--| (95)
+|     |       |          |   |  |  |            |  |  +**Digitonthophagus_gazella_3_1
+|     |       |          |   |  |  |            |  +--| (98)
+|     |       |          |   |  |  |            |     |  +**Digitonthophagus_gazella_3_2
+|     |       |          |   |  |  |            |     +**| (66)
+|     |       |          |   |  |  |            |        +**Digitonthophagus_gazella_3_Vog
+|     |       |          |   |  |  |         +--| (100)
+|     |       |          |   |  |  |         |  +--Onthophagus_signatus
+|     |       |          |   |  |  |      +--| (100)
+|     |       |          |   |  |  |      |  +----------Onthophagus_sp_3
+|     |       |          |   |  |  +------| (100)
+|     |       |          |   |  |         |                 +**Euoniticellus_fulvus
+|     |       |          |   |  |         |             +---| (96)
+|     |       |          |   |  |         |             |   |  +**Euoniticellus_triangulatus_1
+|     |       |          |   |  |         |             |   +--| (98)
+|     |       |          |   |  |         |             |      +**Euoniticellus_triangulatus_2
+|     |       |          |   |  |         |        +----| (100)
+|     |       |          |   |  |         |        |    |  +---Euoniticellus_intermedius
+|     |       |          |   |  |         |        |    +--| (95)
+|     |       |          |   |  |         |        |       |    +--Euoniticellus_intermedius1813
+|     |       |          |   |  |         |        |       +----| (100)
+|     |       |          |   |  |         |        |            +--Euoniticellus_sp
+|     |       |          |   |  |         |     +--| (99)
+|     |       |          |   |  |         |     |  |  +**Onthophagus_avocetta
+|     |       |          |   |  |         |     |  +--| (100)
+|     |       |          |   |  |         |     |     |     +--Onthophagus_diabolicus
+|     |       |          |   |  |         |     |     |  +--| (98)
+|     |       |          |   |  |         |     |     |  |  +----Onthophagus_elegans
+|     |       |          |   |  |         |     |     +--| (99)
+|     |       |          |   |  |         |     |        +----Onthophagus_semiareus
+|     |       |          |   |  |         |  +--| (100)
+|     |       |          |   |  |         |  |  +--Onthophagus_seniculus
+|     |       |          |   |  |         +--| (99)
+|     |       |          |   |  |            |           +-----Onthophagus_alcyon
+|     |       |          |   |  |            |        +--| (81)
+|     |       |          |   |  |            |        |  +--Onthophagus_muticus
+|     |       |          |   |  |            |     +--| (66)
+|     |       |          |   |  |            |     |  +------Onthophagus_furcaticeps
+|     |       |          |   |  |            |  +--| (28)
+|     |       |          |   |  |            |  |  |                 +**Onthophagus_depressus
+|     |       |          |   |  |            |  |  |              +**| (39)
+|     |       |          |   |  |            |  |  |              |  +--Onthophagus_vinctus
+|     |       |          |   |  |            |  |  |           +**| (44)
+|     |       |          |   |  |            |  |  |           |  +--Onthophagus_hinnulus
+|     |       |          |   |  |            |  |  |        +--| (74)
+|     |       |          |   |  |            |  |  |        |  +----------Onthophagus_variegatus
+|     |       |          |   |  |            |  |  |     +--| (67)
+|     |       |          |   |  |            |  |  |     |  +--Onthophagus_flavimargo
+|     |       |          |   |  |            |  |  |  +--| (51)
+|     |       |          |   |  |            |  |  |  |  |  +---------Onthophagus_hecate
+|     |       |          |   |  |            |  |  |  |  +--| (65)
+|     |       |          |   |  |            |  |  |  |     +-----Onthophagus_taurus
+|     |       |          |   |  |            |  |  +--| (67)
+|     |       |          |   |  |            |  |     |      +--Onthophagus_sp_1
+|     |       |          |   |  |            |  |     +------| (100)
+|     |       |          |   |  |            |  |            +--Onthophagus_sp_2
+|     |       |          |   |  |            +--| (97)
+|     |       |          |   |  |               |           +--Onthophagus_batesi
+|     |       |          |   |  |               |        +--| (61)
+|     |       |          |   |  |               |        |  +--------Onthophagus_crinitus
+|     |       |          |   |  |               |     +--| (90)
+|     |       |          |   |  |               |     |  |  +----Onthophagus_bidentatus
+|     |       |          |   |  |               |     |  +--| (99)
+|     |       |          |   |  |               |     |     +---Onthophagus_haematopus
+|     |       |          |   |  |               |  +--| (78)
+|     |       |          |   |  |               |  |  |  +------Onthophagus_quadripustulatus
+|     |       |          |   |  |               |  |  +--| (95)
+|     |       |          |   |  |               |  |     +-----Onthophagus_sp_4
+|     |       |          |   |  |               +--| (45)
+|     |       |          |   |  |                  +-----Onthophagus_mije
+|     |       |          |   +--| (87)
+|     |       |          |      |      +-------Copris_agnus
+|     |       |          |      +------| (100)
+|     |       |          |             |               +--Copris_amyntor_2
+|     |       |          |             |           +---| (98)
+|     |       |          |             |           |   +--Copris_amyntor_2_1
+|     |       |          |             |        +--| (97)
+|     |       |          |             |        |  +------Copris_sp_1
+|     |       |          |             |     +--| (96)
+|     |       |          |             |     |  |  +--Copris_minutus
+|     |       |          |             |     |  +**| (55)
+|     |       |          |             |     |     |  +-----Copris_sp_2
+|     |       |          |             |     |     +--| (90)
+|     |       |          |             |     |        +-----Copris_sp_3
+|     |       |          |             |  +--| (72)
+|     |       |          |             |  |  |     +--Copris_confucius
+|     |       |          |             |  |  |  +--| (100)
+|     |       |          |             |  |  |  |  +**Copris_sinicus
+|     |       |          |             |  |  +--| (81)
+|     |       |          |             |  |     +--Copris_sp1
+|     |       |          |             +--| (74)
+|     |       |          |                +----Copris_lugubris
+|     |       |       +--| (64)
+|     |       |       |  |                  +**Canthidium_guanacaste
+|     |       |       |  |               +--| (80)
+|     |       |       |  |               |  |  +--Canthidium_sp1_1
+|     |       |       |  |               |  +--| (100)
+|     |       |       |  |               |     +--Canthidium_sp1_2
+|     |       |       |  |          +----| (83)
+|     |       |       |  |          |    +**Canthidium_guanacaste6458
+|     |       |       |  |       +--| (38)
+|     |       |       |  |       |  +-----------Canthidium_sp_
+|     |       |       |  |    +--| (40)
+|     |       |       |  |    |  +-----Canthidium_thalassinum
+|     |       |       |  +----| (84)
+|     |       |       |       |    +**Canthidium_rufinum
+|     |       |       |       +----| (100)
+|     |       |       |            +**Canthidium_rufinum6093
+|     |       +-------| (95)
+|     |               |                        +--Canthidium_centrale
+|     |               |                     +--| (92)
+|     |               |                     |  +--Canthidium_centrale3055
+|     |               |                  +**| (58)
+|     |               |                  |  +**Canthidium_haroldi1026
+|     |               |               +**| (58)
+|     |               |               |  +**Canthidium_haroldi
+|     |               |  +------------| (100)
+|     |               |  |            +--Canthidium_centrale1519
+|     |               +--| (66)
+|     |                  |                +**Eurysternus_angustulus
+|     |                  |             +--| (61)
+|     |                  |             |  |  +--Eurysternus_sp_2
+|     |                  |             |  +--| (71)
+|     |                  |             |     |      +--Eurysternus_sp1_1
+|     |                  |             |     +------| (100)
+|     |                  |             |            +--Eurysternus_sp1_2
+|     |                  |        +----| (100)
+|     |                  |        |    +-----Eurysternus_plebejus
+|     |                  |     +--| (86)
+|     |                  |     |  |   +-----Eurysternus_caribaeus
+|     |                  |     |  +---| (100)
+|     |                  |     |      |    +--Eurysternus_hamaticollis
+|     |                  |     |      +----| (100)
+|     |                  |     |           +--Eurysternus_sp_1
+|     |                  |  +--| (94)
+|     |                  |  |  +---------Eurysternus_velutinus
+|     |                  +--| (100)
+|     |                     +-------Eurysternus_inflexus
+|  +--| (98)
+|  |  +--------------Aphodius_lividus
++--| (97)
+|  +--Aphodius_sp_2
+|
+|  +----Aphodius_aegrotus
++--| (94)
+   +**Aphodius_sp_1
+
+Tree in newick format:
+
+(Aphodius_sp_3:0.0276888034,((((Ataenius_sp:0.0232569576,((((((Ataenius_opatroides:0.0000026619,Ataenius_sp4:0.0087679054)91:0.0000029236,Ataenius_sp5:0.0177368250)100:0.0129096599,Ataenius_sp7:0.0179323544)42:0.0000025718,Ataenius_sp6:0.0087326175)11:0.0000020593,Ataenius_sp2:0.0000010220)17:0.0000025201,Ataenius_sp3:0.0000010220)59:0.0044379347)100:0.2214617373,(((((((Ateuchus_chrysopygus:0.0000023937,Ateuchus_sp1:0.0000022877)70:0.0194867822,Ateuchus_floridensis:0.0112715220)69:0.0077135435,Ateuchus_ecuadorensis:0.0300985387)67:0.0028959847,(Ateuchus_sp:0.0204212273,Ateuchus_viduus:0.0146285041)51:0.0000020632)100:0.0250895215,((((((((Canthon_aequinoctialis:0.0300879510,Canthon_sp_3:0.0542714155)92:0.0209787081,Canthon_quinquemaculatus:0.0353332318)50:0.0070220366,(((Canthon_deyrollei:0.0083218584,Canthon_sp_2:0.0000024446)84:0.0018386248,Canthon_indigaceus:0.0222030526)88:0.0144657527,Canthon_perseverans:0.0345597173)70:0.0040996512)54:0.0132427865,(Canthon_luteicollis:0.0683010347,Canthon_viridis:0.0323264666)77:0.0118554504)42:0.0064021359,(Canthon_cyanellus:0.0373012220,(Canthon_lamprimus:0.0333372424,(Canthon_sp_1:0.0000024127,Canthon_sp_4:0.0054931906)100:0.0296388853)98:0.0057081328)100:0.0220145680)77:0.0119116234,(Canthon_fulgidus:0.0160310326,Canthon_smaragdulus:0.0327677048)88:0.0397725471)86:0.0122737518,(((((Digitonthophagus_gazella_3:0.0000026434,Digitonthophagus_sp:0.0028121272)94:0.0025052511,(Digitonthophagus_gazella_3_1:0.0000010220,(Digitonthophagus_gazella_3_2:0.0000010220,Digitonthophagus_gazella_3_Vog:0.0000021735)66:0.0000025423)98:0.0092239787)95:0.0107142798,Onthophagus_signatus:0.0041280556)100:0.0193876078,Onthophagus_sp_3:0.0703161618)100:0.0219302247,(((((Euoniticellus_fulvus:0.0000022854,(Euoniticellus_triangulatus_1:0.0000025845,Euoniticellus_triangulatus_2:0.0000020901)98:0.0051768729)96:0.0299766742,(Euoniticellus_intermedius:0.0282950007,(Euoniticellus_intermedius1813:0.0063377023,Euoniticellus_sp:0.0044653915)100:0.0358336127)95:0.0143183631)100:0.0314907268,(Onthophagus_avocetta:0.0000028005,((Onthophagus_diabolicus:0.0142928010,Onthophagus_elegans:0.0338967988)98:0.0125414427,Onthophagus_semiareus:0.0347193074)99:0.0108616607)100:0.0114871804)99:0.0021983544,Onthophagus_seniculus:0.0054873216)100:0.0177024220,((((Onthophagus_alcyon:0.0394448253,Onthophagus_muticus:0.0122178901)81:0.0056157338,Onthophagus_furcaticeps:0.0466864050)66:0.0037473833,((((((Onthophagus_depressus:0.0000029050,Onthophagus_vinctus:0.0087512881)39:0.0000021989,Onthophagus_hinnulus:0.0052002587)44:0.0000026705,Onthophagus_variegatus:0.0692146470)74:0.0140245449,Onthophagus_flavimargo:0.0155521769)67:0.0103729576,(Onthophagus_hecate:0.0620945925,Onthophagus_taurus:0.0430045639)65:0.0121458306)51:0.0025914655,(Onthophagus_sp_1:0.0025421696,Onthophagus_sp_2:0.0091107748)100:0.0443729206)67:0.0064360908)28:0.0005059567,((((Onthophagus_batesi:0.0070021075,Onthophagus_crinitus:0.0613902420)61:0.0087028923,(Onthophagus_bidentatus:0.0341967996,Onthophagus_haematopus:0.0294422767)99:0.0141360113)90:0.0130185319,(Onthophagus_quadripustulatus:0.0435583939,Onthophagus_sp_4:0.0423032622)95:0.0026704683)78:0.0033434785,Onthophagus_mije:0.0422073789)45:0.0030080722)97:0.0144367592)99:0.0190782558)100:0.0471044890)81:0.0111169547,(Copris_agnus:0.0552078293,(((((Copris_amyntor_2:0.0047035457,Copris_amyntor_2_1:0.0027441404)98:0.0267640009,Copris_sp_1:0.0475261380)97:0.0153055772,(Copris_minutus:0.0151460488,(Copris_sp_2:0.0382625615,Copris_sp_3:0.0426736690)90:0.0045544999)55:0.0000024841)96:0.0087904216,((Copris_confucius:0.0054111527,Copris_sinicus:0.0000024466)100:0.0155302685,Copris_sp1:0.0190592900)81:0.0192651388)72:0.0084857372,Copris_lugubris:0.0321108187)74:0.0049806582)100:0.0472266768)87:0.0165474274)77:0.0252784526,(((((Canthidium_guanacaste:0.0000023155,(Canthidium_sp1_1:0.0033364680,Canthidium_sp1_2:0.0039399434)100:0.0206509669)80:0.0006277107,Canthidium_guanacaste6458:0.0000023598)83:0.0329764522,Canthidium_sp_:0.0760914446)38:0.0048858979,Canthidium_thalassinum:0.0429827442)40:0.0029040213,(Canthidium_rufinum:0.0000020863,Canthidium_rufinum6093:0.0000010220)100:0.0355359229)84:0.0331166585)64:0.0108632203,(((((Canthidium_centrale:0.0007772956,Canthidium_centrale3055:0.0023631296)92:0.0007894517,Canthidium_haroldi1026:0.0000010220)58:0.0000020809,Canthidium_haroldi:0.0000021002)58:0.0000024769,Canthidium_centrale1519:0.0015638326)100:0.0828597525,(((((Eurysternus_angustulus:0.0000029901,(Eurysternus_sp_2:0.0189278198,(Eurysternus_sp1_1:0.0108847668,Eurysternus_sp1_2:0.0053332753)100:0.0488480431)71:0.0238309558)61:0.0248008843,Eurysternus_plebejus:0.0410403803)100:0.0335063004,(Eurysternus_caribaeus:0.0409460349,(Eurysternus_hamaticollis:0.0057598852,Eurysternus_sp_1:0.0014644156)100:0.0320408403)100:0.0306348797)86:0.0051461986,Eurysternus_velutinus:0.0667926272)94:0.0078867297,Eurysternus_inflexus:0.0526222046)100:0.0202215666)66:0.0141001744)95:0.0551162512)99:0.0542772780,Aphodius_lividus:0.0975510004)98:0.0077788385,Aphodius_sp_2:0.0237293376)97:0.0074171496,(Aphodius_aegrotus:0.0311740122,Aphodius_sp_1:0.0000029553)94:0.0239737411);
+
+CONSENSUS TREE
+--------------
+
+Consensus tree is constructed from 1000 bootstrap trees
+Log-likelihood of consensus tree: -32215.275997
+Robinson-Foulds distance between ML tree and consensus tree: 8
+
+Branches with support >0.000000% are kept (extended consensus)
+Branch lengths are optimized by maximum likelihood on original alignment
+Numbers in parentheses are bootstrap supports (%)
+
++---Aphodius_sp_3
+|
+|                                                +--Ataenius_sp
+|             +----------------------------------| (100)
+|             |                                  |                 +--Ataenius_opatroides
+|             |                                  |              +--| (91)
+|             |                                  |              |  +--Ataenius_sp4
+|             |                                  |           +--| (100)
+|             |                                  |           |  +--Ataenius_sp5
+|             |                                  |        +--| (42)
+|             |                                  |        |  +--Ataenius_sp7
+|             |                                  |     +--| (22)
+|             |                                  |     |  +--Ataenius_sp2
+|             |                                  |  +--| (20)
+|             |                                  |  |  +--Ataenius_sp3
+|             |                                  +--| (59)
+|             |                                     +--Ataenius_sp6
+|     +-------| (99)
+|     |       |                           +--Ateuchus_chrysopygus
+|     |       |                        +--| (70)
+|     |       |                        |  +--Ateuchus_sp1
+|     |       |                     +--| (69)
+|     |       |                     |  +--Ateuchus_floridensis
+|     |       |                  +--| (67)
+|     |       |                  |  +---Ateuchus_ecuadorensis
+|     |       |              +---| (100)
+|     |       |              |   |  +--Ateuchus_sp
+|     |       |              |   +--| (51)
+|     |       |              |      +--Ateuchus_viduus
+|     |       |          +---| (77)
+|     |       |          |   |                       +---Canthon_aequinoctialis
+|     |       |          |   |                    +--| (92)
+|     |       |          |   |                    |  +-------Canthon_sp_3
+|     |       |          |   |                 +--| (50)
+|     |       |          |   |                 |  +----Canthon_quinquemaculatus
+|     |       |          |   |              +--| (54)
+|     |       |          |   |              |  |        +--Canthon_deyrollei
+|     |       |          |   |              |  |     +--| (84)
+|     |       |          |   |              |  |     |  +--Canthon_sp_2
+|     |       |          |   |              |  |  +--| (88)
+|     |       |          |   |              |  |  |  +--Canthon_indigaceus
+|     |       |          |   |              |  +--| (70)
+|     |       |          |   |              |     +----Canthon_perseverans
+|     |       |          |   |           +--| (42)
+|     |       |          |   |           |  |  +---------Canthon_luteicollis
+|     |       |          |   |           |  +--| (77)
+|     |       |          |   |           |     +----Canthon_viridis
+|     |       |          |   |        +--| (77)
+|     |       |          |   |        |  |  +-----Canthon_cyanellus
+|     |       |          |   |        |  +--| (100)
+|     |       |          |   |        |     |  +----Canthon_lamprimus
+|     |       |          |   |        |     +--| (98)
+|     |       |          |   |        |        |   +--Canthon_sp_1
+|     |       |          |   |        |        +---| (100)
+|     |       |          |   |        |            +--Canthon_sp_4
+|     |       |          |   |     +--| (86)
+|     |       |          |   |     |  |     +--Canthon_fulgidus
+|     |       |          |   |     |  +-----| (88)
+|     |       |          |   |     |        +----Canthon_smaragdulus
+|     |       |          |   |  +--| (81)
+|     |       |          |   |  |  |                  +--Digitonthophagus_gazella_3
+|     |       |          |   |  |  |               +--| (94)
+|     |       |          |   |  |  |               |  +--Digitonthophagus_sp
+|     |       |          |   |  |  |            +--| (95)
+|     |       |          |   |  |  |            |  |  +--Digitonthophagus_gazella_3_1
+|     |       |          |   |  |  |            |  +--| (98)
+|     |       |          |   |  |  |            |     |  +--Digitonthophagus_gazella_3_2
+|     |       |          |   |  |  |            |     +--| (66)
+|     |       |          |   |  |  |            |        +--Digitonthophagus_gazella_3_Vog
+|     |       |          |   |  |  |         +--| (100)
+|     |       |          |   |  |  |         |  +--Onthophagus_signatus
+|     |       |          |   |  |  |      +--| (100)
+|     |       |          |   |  |  |      |  +----------Onthophagus_sp_3
+|     |       |          |   |  |  +------| (100)
+|     |       |          |   |  |         |                 +--Euoniticellus_fulvus
+|     |       |          |   |  |         |             +---| (96)
+|     |       |          |   |  |         |             |   |  +--Euoniticellus_triangulatus_1
+|     |       |          |   |  |         |             |   +--| (98)
+|     |       |          |   |  |         |             |      +--Euoniticellus_triangulatus_2
+|     |       |          |   |  |         |        +----| (100)
+|     |       |          |   |  |         |        |    |  +---Euoniticellus_intermedius
+|     |       |          |   |  |         |        |    +--| (95)
+|     |       |          |   |  |         |        |       |    +--Euoniticellus_intermedius1813
+|     |       |          |   |  |         |        |       +----| (100)
+|     |       |          |   |  |         |        |            +--Euoniticellus_sp
+|     |       |          |   |  |         |     +--| (99)
+|     |       |          |   |  |         |     |  |  +--Onthophagus_avocetta
+|     |       |          |   |  |         |     |  +--| (100)
+|     |       |          |   |  |         |     |     |     +--Onthophagus_diabolicus
+|     |       |          |   |  |         |     |     |  +--| (98)
+|     |       |          |   |  |         |     |     |  |  +----Onthophagus_elegans
+|     |       |          |   |  |         |     |     +--| (99)
+|     |       |          |   |  |         |     |        +----Onthophagus_semiareus
+|     |       |          |   |  |         |  +--| (100)
+|     |       |          |   |  |         |  |  +--Onthophagus_seniculus
+|     |       |          |   |  |         +--| (99)
+|     |       |          |   |  |            |           +-----Onthophagus_alcyon
+|     |       |          |   |  |            |        +--| (81)
+|     |       |          |   |  |            |        |  +--Onthophagus_muticus
+|     |       |          |   |  |            |     +--| (66)
+|     |       |          |   |  |            |     |  +------Onthophagus_furcaticeps
+|     |       |          |   |  |            |  +--| (28)
+|     |       |          |   |  |            |  |  |                 +--Onthophagus_depressus
+|     |       |          |   |  |            |  |  |              +--| (39)
+|     |       |          |   |  |            |  |  |              |  +--Onthophagus_vinctus
+|     |       |          |   |  |            |  |  |           +--| (44)
+|     |       |          |   |  |            |  |  |           |  +--Onthophagus_hinnulus
+|     |       |          |   |  |            |  |  |        +--| (74)
+|     |       |          |   |  |            |  |  |        |  +----------Onthophagus_variegatus
+|     |       |          |   |  |            |  |  |     +--| (67)
+|     |       |          |   |  |            |  |  |     |  +--Onthophagus_flavimargo
+|     |       |          |   |  |            |  |  |  +--| (51)
+|     |       |          |   |  |            |  |  |  |  |  +--------Onthophagus_hecate
+|     |       |          |   |  |            |  |  |  |  +--| (65)
+|     |       |          |   |  |            |  |  |  |     +-----Onthophagus_taurus
+|     |       |          |   |  |            |  |  +--| (67)
+|     |       |          |   |  |            |  |     |      +--Onthophagus_sp_1
+|     |       |          |   |  |            |  |     +------| (100)
+|     |       |          |   |  |            |  |            +--Onthophagus_sp_2
+|     |       |          |   |  |            +--| (97)
+|     |       |          |   |  |               |           +--Onthophagus_batesi
+|     |       |          |   |  |               |        +--| (61)
+|     |       |          |   |  |               |        |  +--------Onthophagus_crinitus
+|     |       |          |   |  |               |     +--| (90)
+|     |       |          |   |  |               |     |  |  +----Onthophagus_bidentatus
+|     |       |          |   |  |               |     |  +--| (99)
+|     |       |          |   |  |               |     |     +---Onthophagus_haematopus
+|     |       |          |   |  |               |  +--| (78)
+|     |       |          |   |  |               |  |  |  +------Onthophagus_quadripustulatus
+|     |       |          |   |  |               |  |  +--| (95)
+|     |       |          |   |  |               |  |     +-----Onthophagus_sp_4
+|     |       |          |   |  |               +--| (45)
+|     |       |          |   |  |                  +-----Onthophagus_mije
+|     |       |          |   +--| (87)
+|     |       |          |      |      +-------Copris_agnus
+|     |       |          |      +------| (100)
+|     |       |          |             |               +--Copris_amyntor_2
+|     |       |          |             |           +---| (98)
+|     |       |          |             |           |   +--Copris_amyntor_2_1
+|     |       |          |             |        +--| (97)
+|     |       |          |             |        |  +------Copris_sp_1
+|     |       |          |             |     +--| (96)
+|     |       |          |             |     |  |  +--Copris_minutus
+|     |       |          |             |     |  +--| (55)
+|     |       |          |             |     |     |  +-----Copris_sp_2
+|     |       |          |             |     |     +--| (90)
+|     |       |          |             |     |        +-----Copris_sp_3
+|     |       |          |             |  +--| (72)
+|     |       |          |             |  |  |     +--Copris_confucius
+|     |       |          |             |  |  |  +--| (100)
+|     |       |          |             |  |  |  |  +--Copris_sinicus
+|     |       |          |             |  |  +--| (81)
+|     |       |          |             |  |     +--Copris_sp1
+|     |       |          |             +--| (74)
+|     |       |          |                +----Copris_lugubris
+|     |       |       +--| (64)
+|     |       |       |  |            +--Canthidium_guanacaste
+|     |       |       |  |         +--| (80)
+|     |       |       |  |         |  |  +--Canthidium_sp1_1
+|     |       |       |  |         |  +--| (100)
+|     |       |       |  |         |     +--Canthidium_sp1_2
+|     |       |       |  |    +----| (83)
+|     |       |       |  |    |    +--Canthidium_guanacaste6458
+|     |       |       |  +----| (84)
+|     |       |       |       |       +--Canthidium_rufinum
+|     |       |       |       |  +----| (100)
+|     |       |       |       |  |    +--Canthidium_rufinum6093
+|     |       |       |       +--| (57)
+|     |       |       |          |  +----------Canthidium_sp_
+|     |       |       |          +--| (58)
+|     |       |       |             +-----Canthidium_thalassinum
+|     |       +-------| (95)
+|     |               |                        +--Canthidium_centrale
+|     |               |                     +--| (92)
+|     |               |                     |  +--Canthidium_centrale3055
+|     |               |                  +--| (58)
+|     |               |                  |  +--Canthidium_haroldi1026
+|     |               |               +--| (58)
+|     |               |               |  +--Canthidium_haroldi
+|     |               |  +------------| (100)
+|     |               |  |            +--Canthidium_centrale1519
+|     |               +--| (66)
+|     |                  |                 +--Eurysternus_angustulus
+|     |                  |             +---| (61)
+|     |                  |             |   |  +--Eurysternus_sp_2
+|     |                  |             |   +--| (71)
+|     |                  |             |      |      +--Eurysternus_sp1_1
+|     |                  |             |      +------| (100)
+|     |                  |             |             +--Eurysternus_sp1_2
+|     |                  |        +----| (100)
+|     |                  |        |    +-----Eurysternus_plebejus
+|     |                  |     +--| (86)
+|     |                  |     |  |   +-----Eurysternus_caribaeus
+|     |                  |     |  +---| (100)
+|     |                  |     |      |    +--Eurysternus_hamaticollis
+|     |                  |     |      +----| (100)
+|     |                  |     |           +--Eurysternus_sp_1
+|     |                  |  +--| (94)
+|     |                  |  |  +---------Eurysternus_velutinus
+|     |                  +--| (100)
+|     |                     +-------Eurysternus_inflexus
+|  +--| (98)
+|  |  +--------------Aphodius_lividus
++--| (97)
+|  +--Aphodius_sp_2
+|
+|  +---Aphodius_aegrotus
++--| (94)
+   +--Aphodius_sp_1
+
+
+Consensus tree in newick format: 
+
+(Aphodius_sp_3:0.0277214018,((((Ataenius_sp:0.0232126269,((((((Ataenius_opatroides:0.0000025538,Ataenius_sp4:0.0087506912)91:0.0000023231,Ataenius_sp5:0.0177019730)100:0.0128879914,Ataenius_sp7:0.0178972319)42:0.0000020261,Ataenius_sp2:0.0000021351)22:0.0000020261,Ataenius_sp3:0.0000021351)20:0.0000020261,Ataenius_sp6:0.0087159538)59:0.0044428122)100:0.2211642830,(((((((Ateuchus_chrysopygus:0.0000020928,Ateuchus_sp1:0.0000027586)70:0.0194690324,Ateuchus_floridensis:0.0112557074)69:0.0076982096,Ateuchus_ecuadorensis:0.0301556775)67:0.0029284945,(Ateuchus_sp:0.0203866911,Ateuchus_viduus:0.0145924822)51:0.0000023256)100:0.0254673777,((((((((Canthon_aequinoctialis:0.0300493846,Canthon_sp_3:0.0541839838)92:0.0209439736,Canthon_quinquemaculatus:0.0352924200)50:0.0069608725,(((Canthon_deyrollei:0.0082153778,Canthon_sp_2:0.0000020745)84:0.0019419755,Canthon_indigaceus:0.0222314671)88:0.0144586602,Canthon_perseverans:0.0345687623)70:0.0040968629)54:0.0132387279,(Canthon_luteicollis:0.0682657807,Canthon_viridis:0.0323790935)77:0.0118195476)42:0.0063432503,(Canthon_cyanellus:0.0373372482,(Canthon_lamprimus:0.0333613609,(Canthon_sp_1:0.0000027677,Canthon_sp_4:0.0054927787)100:0.0296459362)98:0.0057234133)100:0.0221381604)77:0.0119078524,(Canthon_fulgidus:0.0159821810,Canthon_smaragdulus:0.0328080173)88:0.0396432732)86:0.0124615585,(((((Digitonthophagus_gazella_3:0.0000021418,Digitonthophagus_sp:0.0028121394)94:0.0025049021,(Digitonthophagus_gazella_3_1:0.0000021351,(Digitonthophagus_gazella_3_2:0.0000021351,Digitonthophagus_gazella_3_Vog:0.0000023261)66:0.0000024344)98:0.0092268931)95:0.0105377988,Onthophagus_signatus:0.0041447346)100:0.0196073006,Onthophagus_sp_3:0.0702961054)100:0.0218609591,(((((Euoniticellus_fulvus:0.0000020399,(Euoniticellus_triangulatus_1:0.0000021351,Euoniticellus_triangulatus_2:0.0000021351)98:0.0051724274)96:0.0300128150,(Euoniticellus_intermedius:0.0283015979,(Euoniticellus_intermedius1813:0.0063212378,Euoniticellus_sp:0.0044729002)100:0.0357905939)95:0.0143020916)100:0.0314952689,(Onthophagus_avocetta:0.0000021351,((Onthophagus_diabolicus:0.0142727734,Onthophagus_elegans:0.0338618640)98:0.0125620271,Onthophagus_semiareus:0.0347097591)99:0.0108502072)100:0.0114868051)99:0.0021969453,Onthophagus_seniculus:0.0054827051)100:0.0176950184,((((Onthophagus_alcyon:0.0394404575,Onthophagus_muticus:0.0122139273)81:0.0056146767,Onthophagus_furcaticeps:0.0466914204)66:0.0037880519,((((((Onthophagus_depressus:0.0000020062,Onthophagus_vinctus:0.0086775671)39:0.0000024863,Onthophagus_hinnulus:0.0051945797)44:0.0000020493,Onthophagus_variegatus:0.0691353733)74:0.0140903813,Onthophagus_flavimargo:0.0155375612)67:0.0103421109,(Onthophagus_hecate:0.0619910318,Onthophagus_taurus:0.0429469046)65:0.0121268341)51:0.0025239864,(Onthophagus_sp_1:0.0025437826,Onthophagus_sp_2:0.0091068095)100:0.0443826937)67:0.0064431433)28:0.0004765926,((((Onthophagus_batesi:0.0069280042,Onthophagus_crinitus:0.0607285540)61:0.0094413201,(Onthophagus_bidentatus:0.0342180693,Onthophagus_haematopus:0.0294564012)99:0.0141000833)90:0.0129994951,(Onthophagus_quadripustulatus:0.0435659571,Onthophagus_sp_4:0.0423920905)95:0.0025889925)78:0.0033316846,Onthophagus_mije:0.0422031119)45:0.0030510441)97:0.0144622579)99:0.0191178471)100:0.0469370438)81:0.0110307710,(Copris_agnus:0.0553019379,(((((Copris_amyntor_2:0.0046892092,Copris_amyntor_2_1:0.0028230864)98:0.0266662956,Copris_sp_1:0.0475873739)97:0.0153251346,(Copris_minutus:0.0151153010,(Copris_sp_2:0.0383100594,Copris_sp_3:0.0426724501)90:0.0045478595)55:0.0000026704)96:0.0087772513,((Copris_confucius:0.0054053159,Copris_sinicus:0.0000021081)100:0.0155038352,Copris_sp1:0.0190384175)81:0.0193131730)72:0.0085653556,Copris_lugubris:0.0320411142)74:0.0049773433)100:0.0470577266)87:0.0163175392)77:0.0256911678,(((Canthidium_guanacaste:0.0000022184,(Canthidium_sp1_1:0.0031917233,Canthidium_sp1_2:0.0040389877)100:0.0224340168)80:0.0006413548,Canthidium_guanacaste6458:0.0000021393)83:0.0352738676,((Canthidium_rufinum:0.0000027230,Canthidium_rufinum6093:0.0000021351)100:0.0362203803,(Canthidium_sp_:0.0737269954,Canthidium_thalassinum:0.0390483107)58:0.0052938498)57:0.0049232216)84:0.0332813405)64:0.0107629850,(((((Canthidium_centrale:0.0007762691,Canthidium_centrale3055:0.0023641734)92:0.0007893769,Canthidium_haroldi1026:0.0000021351)58:0.0000021351,Canthidium_haroldi:0.0000024049)58:0.0000022961,Canthidium_centrale1519:0.0015641669)100:0.0825453078,(((((Eurysternus_angustulus:0.0000029359,(Eurysternus_sp_2:0.0190074972,(Eurysternus_sp1_1:0.0109059218,Eurysternus_sp1_2:0.0052982356)100:0.0485045988)71:0.0235360185)61:0.0249320003,Eurysternus_plebejus:0.0409718316)100:0.0335242397,(Eurysternus_caribaeus:0.0410422006,(Eurysternus_hamaticollis:0.0057560431,Eurysternus_sp_1:0.0014709226)100:0.0319641262)100:0.0306575798)86:0.0051491061,Eurysternus_velutinus:0.0666118068)94:0.0078199630,Eurysternus_inflexus:0.0529734291)100:0.0204010062)66:0.0136472569)95:0.0553150900)99:0.0543512078,Aphodius_lividus:0.0973669751)98:0.0079560209,Aphodius_sp_2:0.0237815853)97:0.0074107438,(Aphodius_aegrotus:0.0309621949,Aphodius_sp_1:0.0000021324)94:0.0239785706);
+
+TIME STAMP
+----------
+
+Date and time: Sat Mar 11 19:59:55 2023
+Total CPU time used: 697.222387 seconds (0h:11m:37s)
+Total wall-clock time used: 360.2768136 seconds (0h:6m:0s)
+

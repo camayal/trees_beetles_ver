@@ -1,0 +1,14 @@
+IQ-TREE multicore version 2.2.0.3 COVID-edition for Linux 64-bit built Aug  2 2022
+Developed by Bui Quang Minh, James Barbetti, Nguyen Lam Tung,
+Olga Chernomor, Heiko Schmidt, Dominik Schrempf, Michael Woodhams, Ly Trong Nhan.
+
+Host:    c22n07.farnam.hpc.yale.internal (AVX2, FMA3, 125 GB RAM)
+Command: iqtree -s ./Multigenes/selected.nex -bb 1000 -nt 4 -redo -pre ./analysis_iqtree/multigenes_selected -m TEST -T AUTO
+Seed:    988595 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Fri Mar 10 14:57:44 2023
+Kernel:  AVX+FMA - auto-detect threads (20 CPU cores detected)
+
+Reading alignment file ./Multigenes/selected.nex ... Nexus format detected
+ERROR: 
+ERROR: Error found at line 95, column 2 (file position 509768):
+ERROR: State specified (e) for taxon 88, character 1, not found in list of valid symbols

@@ -1,0 +1,743 @@
+IQ-TREE 2.2.0.3 COVID-edition built Aug  2 2022
+
+Input file name: concatenated_coi.aligned.renamed.fasta
+Type of analysis: ModelFinder + tree reconstruction + ultrafast bootstrap (1000 replicates)
+Random seed number: 234829
+
+REFERENCES
+----------
+
+To cite IQ-TREE please use:
+
+Bui Quang Minh, Heiko A. Schmidt, Olga Chernomor, Dominik Schrempf,
+Michael D. Woodhams, Arndt von Haeseler, and Robert Lanfear (2020)
+IQ-TREE 2: New models and efficient methods for phylogenetic inference
+in the genomic era. Mol. Biol. Evol., in press.
+https://doi.org/10.1093/molbev/msaa015
+
+To cite ModelFinder please use: 
+
+Subha Kalyaanamoorthy, Bui Quang Minh, Thomas KF Wong, Arndt von Haeseler,
+and Lars S Jermiin (2017) ModelFinder: Fast model selection for
+accurate phylogenetic estimates. Nature Methods, 14:587–589.
+https://doi.org/10.1038/nmeth.4285
+
+Since you used ultrafast bootstrap (UFBoot) please also cite: 
+
+Diep Thi Hoang, Olga Chernomor, Arndt von Haeseler, Bui Quang Minh,
+and Le Sy Vinh (2018) UFBoot2: Improving the ultrafast bootstrap
+approximation. Mol. Biol. Evol., 35:518–522.
+https://doi.org/10.1093/molbev/msx281
+
+SEQUENCE ALIGNMENT
+------------------
+
+Input data: 142 sequences with 1940 nucleotide sites
+Number of constant sites: 1026 (= 52.8866% of all sites)
+Number of invariant (constant or ambiguous constant) sites: 1026 (= 52.8866% of all sites)
+Number of parsimony informative sites: 614
+Number of distinct site patterns: 835
+
+ModelFinder
+-----------
+
+Best-fit model according to BIC: GTR+F+I+G4
+
+List of models sorted by BIC scores: 
+
+Model                  LogL         AIC      w-AIC        AICc     w-AICc         BIC      w-BIC
+GTR+F+I+G4       -20214.163   40982.326 +    0.956   41074.993 +    0.938   42525.339 +    0.573
+GTR+F+G4         -20218.241   40988.481 -   0.0441   41080.426 +    0.062   42525.923 +    0.427
+TIM+F+I+G4       -20277.360   41104.720 - 2.53e-27   41195.946 -  5.1e-27   42636.591 - 3.98e-25
+TIM2+F+G4        -20282.340   41112.681 - 4.72e-29   41203.191 - 1.36e-28   42638.982 -  1.2e-25
+TIM2+F+I+G4      -20278.563   41107.127 - 7.59e-28   41198.353 - 1.53e-27   42638.999 - 1.19e-25
+TIM+F+G4         -20282.734   41113.467 - 3.19e-29   41203.978 -  9.2e-29   42639.769 - 8.12e-26
+TVM+F+I+G4       -20375.007   41302.014 - 3.64e-70   41393.958 - 5.13e-70   42839.456 - 3.53e-69
+TVM+F+G4         -20378.965   41307.930 - 1.89e-71   41399.156 - 3.81e-71   42839.802 - 2.97e-69
+TIM3+F+I+G4      -20406.781   41363.563 - 1.57e-83   41454.789 - 3.17e-83   42895.435 - 2.47e-81
+TIM3+F+G4        -20413.338   41374.677 - 6.06e-86   41465.187 - 1.75e-85   42900.978 - 1.54e-82
+TPM2u+F+G4       -20443.093   41432.186 - 1.97e-98   41521.984 - 8.12e-98   42952.917 - 8.14e-94
+K3Pu+F+I+G4      -20439.341   41426.682 - 3.09e-97   41517.192 - 8.91e-97   42952.983 - 7.87e-94
+TPM2u+F+I+G4     -20439.343   41426.686 - 3.08e-97   41517.197 - 8.89e-97   42952.988 - 7.85e-94
+K3Pu+F+G4        -20444.881   41435.762 -  3.3e-99   41525.560 - 1.36e-98   42956.493 - 1.36e-94
+TN+F+I+G4        -20445.906   41439.812 - 4.35e-100   41530.323 - 1.26e-99   42966.114 - 1.11e-96
+TN+F+G4          -20453.286   41452.572 - 7.38e-103   41542.371 - 3.04e-102   42973.303 - 3.05e-98
+SYM+I+G4         -20552.460   41652.919 - 2.31e-146   41743.430 - 6.65e-146   43179.221 - 5.88e-143
+SYM+G4           -20557.898   41661.796 - 2.73e-148   41751.595 - 1.12e-147   43182.527 - 1.13e-143
+TPM3u+F+I+G4     -20554.765   41657.529 - 2.3e-147   41748.040 - 6.64e-147   43183.831 - 5.86e-144
+TPM3u+F+G4       -20560.454   41666.907 - 2.12e-149   41756.705 - 8.71e-149   43187.638 - 8.74e-145
+HKY+F+I+G4       -20595.679   41737.359 - 1.06e-164   41827.157 - 4.38e-164   43258.090 - 4.4e-160
+HKY+F+G4         -20601.456   41746.913 - 8.97e-167   41836.002 - 5.26e-166   43262.074 -   6e-161
+TVMe+I+G4        -20783.252   42112.503 - 3.68e-246   42202.302 - 1.51e-245   43633.234 - 1.52e-241
+TVMe+G4          -20788.496   42120.992 - 5.28e-248   42210.081 - 3.1e-247   43636.153 - 3.53e-242
+TIMe+I+G4        -20803.733   42151.466 - 1.27e-254   42240.556 - 7.47e-254   43666.627 - 8.52e-249
+TIMe+G4          -20811.342   42164.684 - 1.72e-257   42253.068 - 1.43e-256   43674.275 - 1.86e-250
+TIM2e+I+G4       -20869.564   42283.127 - 3.27e-283   42372.217 - 1.92e-282   43798.288 - 2.19e-277
+TIM2e+G4         -20874.239   42290.479 - 8.29e-285   42378.863 - 6.93e-284   43800.069 - 8.99e-278
+F81+F+I+G4       -20986.843   42517.685 -        0   42606.774 -        0   44032.846 -        0
+F81+F+G4         -20992.399   42526.799 -        0   42615.183 -        0   44036.389 -        0
+K3P+I+G4         -21035.643   42613.287 -        0   42701.671 -        0   44122.877 -        0
+K3P+G4           -21040.541   42621.082 -        0   42708.763 -        0   44125.101 -        0
+TPM2+I+G4        -21064.588   42671.176 -        0   42759.560 -        0   44180.766 -        0
+TPM2+G4          -21069.157   42678.314 -        0   42765.995 -        0   44182.333 -        0
+TIM3e+I+G4       -21094.386   42732.773 -        0   42821.862 -        0   44247.933 -        0
+TIM3e+G4         -21102.501   42747.001 -        0   42835.385 -        0   44256.591 -        0
+TNe+I+G4         -21314.563   43171.126 -        0   43259.509 -        0   44680.716 -        0
+TNe+G4           -21321.095   43182.190 -        0   43269.871 -        0   44686.210 -        0
+TPM3+I+G4        -21352.756   43247.513 -        0   43335.897 -        0   44757.103 -        0
+TPM3+G4          -21357.485   43254.970 -        0   43342.652 -        0   44758.990 -        0
+K2P+I+G4         -21541.663   43623.325 -        0   43711.006 -        0   45127.345 -        0
+K2P+G4           -21546.612   43631.224 -        0   43718.206 -        0   45129.673 -        0
+JC+I+G4          -21689.518   43917.037 -        0   44004.019 -        0   45415.486 -        0
+JC+G4            -21694.307   43924.614 -        0   44010.900 -        0   45417.493 -        0
+GTR+F+I          -21750.208   44052.415 -        0   44144.360 -        0   45589.858 -        0
+GTR+F            -22289.222   45128.445 -        0   45219.671 -        0   46660.317 -        0
+
+AIC, w-AIC   : Akaike information criterion scores and weights.
+AICc, w-AICc : Corrected AIC scores and weights.
+BIC, w-BIC   : Bayesian information criterion scores and weights.
+
+Plus signs denote the 95% confidence sets.
+Minus signs denote significant exclusion.
+
+SUBSTITUTION PROCESS
+--------------------
+
+Model of substitution: GTR+F+I+G4
+
+Rate parameter R:
+
+  A-C: 3.2971
+  A-G: 9.1335
+  A-T: 9.7259
+  C-G: 2.4913
+  C-T: 28.5897
+  G-T: 1.0000
+
+State frequencies: (empirical counts from alignment)
+
+  pi(A) = 0.3217
+  pi(C) = 0.1585
+  pi(G) = 0.1415
+  pi(T) = 0.3783
+
+Rate matrix Q:
+
+  A    -0.765   0.07275      0.18    0.5123
+  C    0.1477    -1.703    0.0491     1.506
+  G    0.4092   0.05497   -0.5168   0.05267
+  T    0.4357    0.6308   0.01971    -1.086
+
+Model of rate heterogeneity: Invar+Gamma with 4 categories
+Proportion of invariable sites: 0.08281
+Gamma shape alpha: 0.503
+
+ Category  Relative_rate  Proportion
+  0         0              0.08281
+  1         0.03702        0.2293
+  2         0.2768         0.2293
+  3         0.8967         0.2293
+  4         3.151          0.2293
+Relative rates are computed as MEAN of the portion of the Gamma distribution falling in the category.
+
+MAXIMUM LIKELIHOOD TREE
+-----------------------
+
+Log-likelihood of the tree: -20183.1776 (s.e. 703.6493)
+Unconstrained log-likelihood (without tree): -10132.1103
+Number of free parameters (#branches + #model parameters): 277
+Akaike information criterion (AIC) score: 40920.3553
+Corrected Akaike information criterion (AICc) score: 41013.0220
+Bayesian information criterion (BIC) score: 42463.3681
+
+Total tree length (sum of branch lengths): 47.5013
+Sum of internal branch lengths: 23.1119 (48.6552% of tree length)
+
+WARNING: 24 near-zero internal branches (<0.0005) should be treated with caution
+         Such branches are denoted by '**' in the figure below
+
+WARNING: 2 too long branches (>9.8000) should be treated with caution!
+NOTE: Tree is UNROOTED although outgroup taxon 'Ataenius_sciurus_gb-EF656779.1' is drawn at root
+Numbers in parentheses are SH-aLRT support (%) / ultrafast bootstrap support (%)
+
++**Ataenius_sciurus_gb-EF656779.1
+|
++**Ataenius_sciurus_gb-AY132379.1
+|
+|        +**Ataenius_strigatus_gb-EF656784.1
+|     +--| (99.9/100)
+|     |  +**Ataenius_strigatus_gb-AY132378.1
+|  +--| (89.5/99)
+|  |  |                    +--Ataenius_sp._gb-KF801882.1
+|  |  |                 +--| (83.6/62)
+|  |  |                 |  |  +**Tragiscus_dimidiatus_gb-AY131913.1
+|  |  |                 |  +--| (100/100)
+|  |  |                 |     +**Tragiscus_dimidiatus_gb-EF188227.1
+|  |  |              +--| (88.7/54)
+|  |  |              |  |                          +--------------------------------------------------------Ateuchus_sp._gb-EU162396.1
+|  |  |              |  |                       +--| (0/33)
+|  |  |              |  |                       |  |              +**Eurysternus_caribaeus_gb-JQ972513.1
+|  |  |              |  |                       |  |           +--| (0/49)
+|  |  |              |  |                       |  |           |  |                                                                             +--Ataenius_sp._gb-OP141658.2
+|  |  |              |  |                       |  |           |  |                                                                          +--| (96.8/100)
+|  |  |              |  |                       |  |           |  |                                                                          |  |           +--Ataenius_spretulus_gb-MG057824.1
+|  |  |              |  |                       |  |           |  |                                                                          |  |        +--| (85.8/100)
+|  |  |              |  |                       |  |           |  |                                                                          |  |        |  |  +--Ataenius_spretulus_gb-MG056319.1
+|  |  |              |  |                       |  |           |  |                                                                          |  |        |  +**| (0/69)
+|  |  |              |  |                       |  |           |  |                                                                          |  |        |     +**Ataenius_spretulus_gb-MG056201.1
+|  |  |              |  |                       |  |           |  |                                                                          |  |     +**| (0/60)
+|  |  |              |  |                       |  |           |  |                                                                          |  |     |  +--Ataenius_spretulus_gb-KM844909.1
+|  |  |              |  |                       |  |           |  |                                                                          |  |  +--| (83.8/99)
+|  |  |              |  |                       |  |           |  |                                                                          |  |  |  +**Ataenius_spretulus_gb-MG060910.1
+|  |  |              |  |                       |  |           |  |                                                                          |  +--| (99/100)
+|  |  |              |  |                       |  |           |  |                                                                          |     +**Ataenius_spretulus_gb-HM905906.1
+|  |  |              |  |                       |  |           |  |                                                                       +--| (99.9/99)
+|  |  |              |  |                       |  |           |  |                                                                       |  |  +--Ataenius_strigatus_gb-MH169635.1
+|  |  |              |  |                       |  |           |  |                                                                       |  +--| (97.5/100)
+|  |  |              |  |                       |  |           |  |                                                                       |     |  +--Ataenius_strigatus_gb-MG055219.1
+|  |  |              |  |                       |  |           |  |                                                                       |     +--| (99.8/100)
+|  |  |              |  |                       |  |           |  |                                                                       |        |  +**Ataenius_sp._gb-KR483874.1
+|  |  |              |  |                       |  |           |  |                                                                       |        +--| (92.1/100)
+|  |  |              |  |                       |  |           |  |                                                                       |           +**Ataenius_strigatus_gb-MG062629.1
+|  |  |              |  |                       |  |           |  |                                                                    +--| (95.7/88)
+|  |  |              |  |                       |  |           |  |                                                                    |  |     +--Ataenius_imbricatus_gb-EU156751.1
+|  |  |              |  |                       |  |           |  |                                                                    |  |  +--| (100/100)
+|  |  |              |  |                       |  |           |  |                                                                    |  |  |  +--Ataenius_imbricatus_gb-EU156750.1
+|  |  |              |  |                       |  |           |  |                                                                    |  +--| (74.2/91)
+|  |  |              |  |                       |  |           |  |                                                                    |     |     +--Ataenius_platensis_gb-HM433826.1
+|  |  |              |  |                       |  |           |  |                                                                    |     |  +--| (81.1/99)
+|  |  |              |  |                       |  |           |  |                                                                    |     |  |  +**Ataenius_platensis_gb-HM433823.1
+|  |  |              |  |                       |  |           |  |                                                                    |     +--| (99.9/99)
+|  |  |              |  |                       |  |           |  |                                                                    |        +**Ataenius_platensis_gb-HM433824.1
+|  |  |              |  |                       |  |           |  |                                                                 +--| (29.1/63)
+|  |  |              |  |                       |  |           |  |                                                                 |  |     +--Copris_signatus_gb-MT230950.1
+|  |  |              |  |                       |  |           |  |                                                                 |  |  +--| (73.6/86)
+|  |  |              |  |                       |  |           |  |                                                                 |  |  |  +--Ateuchus_sp._gb-EU162435.1
+|  |  |              |  |                       |  |           |  |                                                                 |  +--| (85.5/95)
+|  |  |              |  |                       |  |           |  |                                                                 |     |  +**Copris_tripartitus_gb-MG701094.1
+|  |  |              |  |                       |  |           |  |                                                                 |     +--| (99.6/100)
+|  |  |              |  |                       |  |           |  |                                                                 |        |  +--Copris_tripartitus_gb-MG701061.1
+|  |  |              |  |                       |  |           |  |                                                                 |        +--| (80.8/100)
+|  |  |              |  |                       |  |           |  |                                                                 |           |  +--Copris_tripartitus_gb-MG701093.1
+|  |  |              |  |                       |  |           |  |                                                                 |           +--| (93.4/100)
+|  |  |              |  |                       |  |           |  |                                                                 |              +**Copris_tripartitus_gb-MG701087.1
+|  |  |              |  |                       |  |           |  |                                                              +--| (90.7/83)
+|  |  |              |  |                       |  |           |  |                                                              |  |  +--Eurysternus_sp._gb-MW200811.1
+|  |  |              |  |                       |  |           |  |                                                              |  +--| (99.4/100)
+|  |  |              |  |                       |  |           |  |                                                              |     |  +--Eurysternus_sp._gb-MW200893.1
+|  |  |              |  |                       |  |           |  |                                                              |     +--| (75.4/98)
+|  |  |              |  |                       |  |           |  |                                                              |        +--Eurysternus_sp._gb-MW200516.1
+|  |  |              |  |                       |  |           |  |                                                           +--| (99.7/81)
+|  |  |              |  |                       |  |           |  |                                                           |  |  +--Digitonthophagus_bonasus_gb-MW343476.1
+|  |  |              |  |                       |  |           |  |                                                           |  +--| (95.5/98)
+|  |  |              |  |                       |  |           |  |                                                           |     |  +--Digitonthophagus_gazella_gb-HQ984465.1
+|  |  |              |  |                       |  |           |  |                                                           |     +--| (90.1/100)
+|  |  |              |  |                       |  |           |  |                                                           |        +--Digitonthophagus_gazella_gb-MN345971.1
+|  |  |              |  |                       |  |           |  |                                                        +--| (90.7/79)
+|  |  |              |  |                       |  |           |  |                                                        |  +--Onthophagus_lemur_gb-LN554677.1
+|  |  |              |  |                       |  |           |  +--------------------------------------------------------| (100/100)
+|  |  |              |  |                       |  |           |                                                           +**Onthophagus_coenobita_gb-KM441496.1
+|  |  |              |  |                       |  |        +**| (0/15)
+|  |  |              |  |                       |  |        |  +**Eurysternus_caribaeus_gb-JQ972521.1
+|  |  |              |  |                       |  |     +**| (0/22)
+|  |  |              |  |                       |  |     |  +**Eurysternus_caribaeus_gb-JQ972554.1
+|  |  |              |  |                       |  |  +**| (0/26)
+|  |  |              |  |                       |  |  |  +**Eurysternus_caribaeus_gb-JQ972148.1
+|  |  |              |  |                       |  +**| (0/24)
+|  |  |              |  |                       |     |     +--Eurysternus_caribaeus_gb-JQ972534.1
+|  |  |              |  |                       |     |  +**| (0/44)
+|  |  |              |  |                       |     |  |  +**Eurysternus_caribaeus_gb-JQ972326.1
+|  |  |              |  |                       |     +**| (0/57)
+|  |  |              |  |                       |        +**Eurysternus_caribaeus_gb-AY131893.1
+|  |  |              |  |                    +--| (50/42)
+|  |  |              |  |                    |  +**Eurysternus_caribaeus_gb-JQ972576.1
+|  |  |              |  |                 +--| (100/86)
+|  |  |              |  |                 |  |     +--Eurysternus_caribaeus_gb-JQ972667.1
+|  |  |              |  |                 |  |  +--| (0/71)
+|  |  |              |  |                 |  |  |  |     +--Eurysternus_caribaeus_gb-JQ972543.1
+|  |  |              |  |                 |  |  |  |  +--| (77.4/84)
+|  |  |              |  |                 |  |  |  |  |  |     +--Eurysternus_caribaeus_gb-JQ972542.1
+|  |  |              |  |                 |  |  |  |  |  |  +--| (75.9/98)
+|  |  |              |  |                 |  |  |  |  |  |  |  +--Eurysternus_caribaeus_gb-JQ972544.1
+|  |  |              |  |                 |  |  |  |  |  +--| (93.7/99)
+|  |  |              |  |                 |  |  |  |  |     +**Eurysternus_caribaeus_gb-JQ972278.1
+|  |  |              |  |                 |  |  |  +**| (0/56)
+|  |  |              |  |                 |  |  |     |  +--Eurysternus_caribaeus_gb-JQ972548.1
+|  |  |              |  |                 |  |  |     +--| (77.7/98)
+|  |  |              |  |                 |  |  |        |  +--Eurysternus_caribaeus_gb-JQ972549.1
+|  |  |              |  |                 |  |  |        +--| (75.9/98)
+|  |  |              |  |                 |  |  |           +**Eurysternus_caribaeus_gb-JQ972523.1
+|  |  |              |  |                 |  +--| (77.6/86)
+|  |  |              |  |                 |     |        +--Eurysternus_caribaeus_gb-JQ972212.1
+|  |  |              |  |                 |     |     +--| (78.3/86)
+|  |  |              |  |                 |     |     |  +--Eurysternus_caribaeus_gb-JQ972514.1
+|  |  |              |  |                 |     |  +**| (0/77)
+|  |  |              |  |                 |     |  |  +**Eurysternus_caribaeus_gb-JQ972175.1
+|  |  |              |  |                 |     +--| (6.3/40)
+|  |  |              |  |                 |        +--Eurysternus_caribaeus_gb-JQ972533.1
+|  |  |              |  |              +--| (88.9/87)
+|  |  |              |  |              |  |  +--Eurysternus_sp._gb-EF656740.1
+|  |  |              |  |              |  +--| (99.8/97)
+|  |  |              |  |              |     |  +**Eurysternus_hamaticollis_gb-AY131894.1
+|  |  |              |  |              |     +--| (94.2/100)
+|  |  |              |  |              |        +**Eurysternus_hamaticollis_gb-EF656757.1
+|  |  |              |  |           +--| (97/95)
+|  |  |              |  |           |  |           +**Eurysternus_velutinus_gb-AY131897.1
+|  |  |              |  |           |  |        +--| (95.6/100)
+|  |  |              |  |           |  |        |  +**Eurysternus_foedus_gb-JQ972327.1
+|  |  |              |  |           |  |     +--| (75/87)
+|  |  |              |  |           |  |     |  +--Eurysternus_foedus_gb-JQ972174.1
+|  |  |              |  |           |  |  +--| (78/91)
+|  |  |              |  |           |  |  |  |  +--Eurysternus_foedus_gb-JQ972558.1
+|  |  |              |  |           |  |  |  +--| (88.6/93)
+|  |  |              |  |           |  |  |     +**Eurysternus_foedus_gb-JQ972553.1
+|  |  |              |  |           |  +--| (100/98)
+|  |  |              |  |           |     +**Eurysternus_foedus_gb-JQ972522.1
+|  |  |              |  |        +--| (55.1/67)
+|  |  |              |  |        |  |  +--Eurysternus_sp._gb-JQ972552.1
+|  |  |              |  |        |  +--| (0/54)
+|  |  |              |  |        |     |  +--Eurysternus_sp._gb-JQ972666.1
+|  |  |              |  |        |     +--| (86.8/96)
+|  |  |              |  |        |        |     +--Eurysternus_plebejus_gb-AY131896.1
+|  |  |              |  |        |        |  +--| (22.7/89)
+|  |  |              |  |        |        |  |  |              +--Eurysternus_magnus_gb-JQ972194.1
+|  |  |              |  |        |        |  |  |           +**| (0/37)
+|  |  |              |  |        |        |  |  |           |  +--Eurysternus_magnus_gb-JQ972263.1
+|  |  |              |  |        |        |  |  |        +**| (0/61)
+|  |  |              |  |        |        |  |  |        |  +--Eurysternus_magnus_gb-JQ972673.1
+|  |  |              |  |        |        |  |  |     +--| (98/99)
+|  |  |              |  |        |        |  |  |     |  +--Eurysternus_magnus_gb-JQ972264.1
+|  |  |              |  |        |        |  |  |  +--| (74.2/97)
+|  |  |              |  |        |        |  |  |  |  |  +**Eurysternus_magnus_gb-JQ972276.1
+|  |  |              |  |        |        |  |  |  |  +**| (0/66)
+|  |  |              |  |        |        |  |  |  |     |  +--Eurysternus_magnus_gb-JQ972195.1
+|  |  |              |  |        |        |  |  |  |     +**| (0/96)
+|  |  |              |  |        |        |  |  |  |        +**Eurysternus_magnus_gb-JQ972267.1
+|  |  |              |  |        |        |  |  +--| (98.9/100)
+|  |  |              |  |        |        |  |     +**Eurysternus_magnus_gb-JQ972266.1
+|  |  |              |  |        |        +--| (96/99)
+|  |  |              |  |        |           |              +**Eurysternus_angustulus_gb-JQ972588.1
+|  |  |              |  |        |           |           +**| (0/79)
+|  |  |              |  |        |           |           |  +**Eurysternus_angustulus_gb-JQ972171.1
+|  |  |              |  |        |           |        +--| (93.6/100)
+|  |  |              |  |        |           |        |  +--Eurysternus_angustulus_gb-JQ972164.1
+|  |  |              |  |        |           |     +**| (0/82)
+|  |  |              |  |        |           |     |  |  +**Eurysternus_angustulus_gb-JQ972587.1
+|  |  |              |  |        |           |     |  +**| (0/94)
+|  |  |              |  |        |           |     |     +**Eurysternus_angustulus_gb-JQ972598.1
+|  |  |              |  |        |           |  +--| (14/83)
+|  |  |              |  |        |           |  |  |     +--Eurysternus_angustulus_gb-JQ972577.1
+|  |  |              |  |        |           |  |  |  +**| (0/56)
+|  |  |              |  |        |           |  |  |  |  +--Eurysternus_angustulus_gb-JQ972181.1
+|  |  |              |  |        |           |  |  +**| (0/71)
+|  |  |              |  |        |           |  |     +**Eurysternus_angustulus_gb-JQ972257.1
+|  |  |              |  |        |           +--| (98.8/100)
+|  |  |              |  |        |              |     +**Eurysternus_angustulus_gb-JQ972325.1
+|  |  |              |  |        |              |  +**| (0/90)
+|  |  |              |  |        |              |  |  +**Eurysternus_angustulus_gb-AY131892.1
+|  |  |              |  |        |              +--| (0/58)
+|  |  |              |  |        |                 +**Eurysternus_angustulus_gb-JQ972169.1
+|  |  |              |  |     +--| (98.6/97)
+|  |  |              |  |     |  +--Eurysternus_inflexus_gb-AY131895.1
+|  |  |              |  |  +--| (81.2/58)
+|  |  |              |  |  |  |  +--Copris_jacchoides_gb-JN804618.1
+|  |  |              |  |  |  +--| (57.6/86)
+|  |  |              |  |  |     |        +--Canthidium_centrale_gb-JQ972160.1
+|  |  |              |  |  |     |     +--| (78/99)
+|  |  |              |  |  |     |     |  +--Canthidium_centrale_gb-JQ972153.1
+|  |  |              |  |  |     |  +**| (0/85)
+|  |  |              |  |  |     |  |  +**Canthidium_haroldi_gb-AY131868.1
+|  |  |              |  |  |     +--| (100/99)
+|  |  |              |  |  |        +--Canthidium_centrale_gb-JQ972538.1
+|  |  |              |  +--| (43.2/42)
+|  |  |              |     |     +--Onthophagus_batesi_gb-EF656738.1
+|  |  |              |     |  +--| (35.4/77)
+|  |  |              |     |  |  +--Onthophagus_maki_gb-KC294242.1
+|  |  |              |     +--| (94.2/99)
+|  |  |              |        |  +--Onthophagus_melitaeus_gb-AY039349.1
+|  |  |              |        +--| (91.4/99)
+|  |  |              |           +--Onthophagus_ruficapillus_gb-AY039354.1
+|  |  |           +--| (84.6/48)
+|  |  |           |  |           +--Copris_sp._gb-AY131861.1
+|  |  |           |  |        +--| (96.2/96)
+|  |  |           |  |        |  +--Copris_amyntor_gb-AY131858.1
+|  |  |           |  |     +--| (54.2/53)
+|  |  |           |  |     |  |        +--Copris_cornifrons_gb-JN804613.1
+|  |  |           |  |     |  |     +--| (87.2/89)
+|  |  |           |  |     |  |     |  +--Copris_aeneus_gb-AY131856.1
+|  |  |           |  |     |  |  +--| (37.4/62)
+|  |  |           |  |     |  |  |  |  +--Copris_lugubris_gb-AY131860.1
+|  |  |           |  |     |  |  |  +--| (98/100)
+|  |  |           |  |     |  |  |     |  +**Copris_sp._gb-JQ972561.1
+|  |  |           |  |     |  |  |     +--| (99.7/100)
+|  |  |           |  |     |  |  |        +--Copris_sp._gb-JQ972556.1
+|  |  |           |  |     |  +--| (54/51)
+|  |  |           |  |     |     |  +--Copris_sinicus_gb-MN175225.1
+|  |  |           |  |     |     +--| (99.4/100)
+|  |  |           |  |     |        +--Copris_confucius_gb-EF188135.1
+|  |  |           |  |  +--| (69.1/95)
+|  |  |           |  |  |  +--Copris_ramosiceps_gb-MN175226.1
+|  |  |           |  +--| (99.2/99)
+|  |  |           |     |  +--Copris_lunaris_gb-X88946.1
+|  |  |           |     +--| (100/100)
+|  |  |           |        +**Copris_hispanicus_gb-AY039366.1
+|  |  |        +--| (50.2/34)
+|  |  |        |  +--Canthon_smaragdulus_gb-AY131816.1
+|  |  |     +--| (93.2/63)
+|  |  |     |  |              +--Canthidium_sp._gb-JQ972262.1
+|  |  |     |  |           +--| (48.3/99)
+|  |  |     |  |           |  +--Canthidium_guanacaste_gb-AY131867.1
+|  |  |     |  |        +--| (98.1/99)
+|  |  |     |  |        |  +--Canthidium_rufinum_gb-AY131869.1
+|  |  |     |  |     +--| (83.3/96)
+|  |  |     |  |     |  |  +--Ateuchus_ecuadorense_gb-EF656741.1
+|  |  |     |  |     |  +--| (98.9/100)
+|  |  |     |  |     |     |  +--Ateuchus_chrysopyge_gb-JQ972562.1
+|  |  |     |  |     |     +--| (99.7/100)
+|  |  |     |  |     |        |     +**Ateuchus_chrysopyge_gb-JQ972133.1
+|  |  |     |  |     |        |  +**| (0/89)
+|  |  |     |  |     |        |  |  |  +**Ateuchus_chrysopyge_gb-AY131866.1
+|  |  |     |  |     |        |  |  +**| (0/96)
+|  |  |     |  |     |        |  |     +**Ateuchus_chrysopyge_gb-JQ972322.1
+|  |  |     |  |     |        +**| (0/96)
+|  |  |     |  |     |           +**Ateuchus_chrysopyge_gb-JQ972622.1
+|  |  |     |  |  +--| (58.3/51)
+|  |  |     |  |  |  |  +--Canthon_lamprimus_gb-EF656739.1
+|  |  |     |  |  |  +--| (98.8/100)
+|  |  |     |  |  |     |  +--Canthon_cyanellus_gb-JQ972192.1
+|  |  |     |  |  |     +--| (99.3/100)
+|  |  |     |  |  |        |  +**Canthon_cyanellus_gb-JQ972189.1
+|  |  |     |  |  |        +--| (86.1/100)
+|  |  |     |  |  |           +**Canthon_cyanellus_gb-JQ972190.1
+|  |  |     |  +--| (93.4/62)
+|  |  |     |     |        +--Canthon_indigaceus_gb-AY131814.1
+|  |  |     |     |     +--| (83.6/74)
+|  |  |     |     |     |  +--Canthon_luteicollis_gb-AY131815.1
+|  |  |     |     |  +--| (0/22)
+|  |  |     |     |  |  +--Canthon_viridis_gb-AY131817.1
+|  |  |     |     +--| (93.9/96)
+|  |  |     |        |  +--Canthon_sp._gb-JQ972529.1
+|  |  |     |        +--| (99.5/100)
+|  |  |     |           |  +--Canthon_subhyalinus_gb-JQ972144.1
+|  |  |     |           +--| (99.5/100)
+|  |  |     |              +--Canthon_subhyalinus_gb-JQ972157.1
+|  |  |  +--| (92.4/94)
+|  |  |  |  +--Aphodius_satellitius_gb-AY039373.1
+|  |  +--| (7.6/64)
+|  |     |  +**Ataenius_monteithi_gb-EF656783.1
+|  |     +--| (99.9/100)
+|  |        +**Ataenius_monteithi_gb-AY132377.1
++--| (100/100)
+   +--Ataenius_sp._gb-EF656782.1
+
+Tree in newick format:
+
+(Ataenius_sciurus_gb-EF656779.1:0.0000024241,Ataenius_sciurus_gb-AY132379.1:0.0000024241,(((Ataenius_strigatus_gb-EF656784.1:0.0000024241,Ataenius_strigatus_gb-AY132378.1:0.0000025545)99.9/100:0.1507666369,(((((((Ataenius_sp._gb-KF801882.1:0.2974971159,(Tragiscus_dimidiatus_gb-AY131913.1:0.0000024241,Tragiscus_dimidiatus_gb-EF188227.1:0.0000024241)100/100:0.1534649372)83.6/62:0.0374045986,(((((((((Ateuchus_sp._gb-EU162396.1:19.9915731737,(((((Eurysternus_caribaeus_gb-JQ972513.1:0.0000022881,((((((((Ataenius_sp._gb-OP141658.2:0.0038329310,((((Ataenius_spretulus_gb-MG057824.1:0.0036886528,(Ataenius_spretulus_gb-MG056319.1:0.0018261292,Ataenius_spretulus_gb-MG056201.1:0.0000027594)0/69:0.0000021046)85.8/100:0.0017944636,Ataenius_spretulus_gb-KM844909.1:0.0042832734)0/60:0.0000027164,Ataenius_spretulus_gb-MG060910.1:0.0000028506)83.8/99:0.0021355160,Ataenius_spretulus_gb-HM905906.1:0.0000025924)99/100:0.0177670756)96.8/100:0.0268070677,(Ataenius_strigatus_gb-MH169635.1:0.0036335972,(Ataenius_strigatus_gb-MG055219.1:0.0067704620,(Ataenius_sp._gb-KR483874.1:0.0000020767,Ataenius_strigatus_gb-MG062629.1:0.0000024241)92.1/100:0.0070462804)99.8/100:0.0304946806)97.5/100:0.0366284654)99.9/99:0.1074254062,((Ataenius_imbricatus_gb-EU156751.1:0.0031131711,Ataenius_imbricatus_gb-EU156750.1:0.0086452499)100/100:0.1162494330,((Ataenius_platensis_gb-HM433826.1:0.0052733326,Ataenius_platensis_gb-HM433823.1:0.0000029553)81.1/99:0.0016072254,Ataenius_platensis_gb-HM433824.1:0.0000026946)99.9/99:0.0982825797)74.2/91:0.0192072144)95.7/88:0.0500431236,((Copris_signatus_gb-MT230950.1:0.1303326570,Ateuchus_sp._gb-EU162435.1:0.1196284643)73.6/86:0.0322743068,(Copris_tripartitus_gb-MG701094.1:0.0000024977,(Copris_tripartitus_gb-MG701061.1:0.0016540033,(Copris_tripartitus_gb-MG701093.1:0.0033441249,Copris_tripartitus_gb-MG701087.1:0.0000021573)93.4/100:0.0050256073)80.8/100:0.0016715495)99.6/100:0.0785697829)85.5/95:0.0457239450)29.1/63:0.0375039082,(Eurysternus_sp._gb-MW200811.1:0.1119606292,(Eurysternus_sp._gb-MW200893.1:0.1128481421,Eurysternus_sp._gb-MW200516.1:0.1160667829)75.4/98:0.0303482507)99.4/100:0.0620145064)90.7/83:0.0301931664,(Digitonthophagus_bonasus_gb-MW343476.1:0.0748256095,(Digitonthophagus_gazella_gb-HQ984465.1:0.0436238367,Digitonthophagus_gazella_gb-MN345971.1:0.0520717071)90.1/100:0.0243273091)95.5/98:0.0325906642)99.7/81:0.0690378430,Onthophagus_lemur_gb-LN554677.1:0.0903781419)90.7/79:0.0423137424,Onthophagus_coenobita_gb-KM441496.1:0.0000020990)100/100:19.9915726500)0/49:0.0027342060,Eurysternus_caribaeus_gb-JQ972521.1:0.0000024241)0/15:0.0000028545,Eurysternus_caribaeus_gb-JQ972554.1:0.0000024241)0/22:0.0000024239,Eurysternus_caribaeus_gb-JQ972148.1:0.0000024241)0/26:0.0000023939,((Eurysternus_caribaeus_gb-JQ972534.1:0.0027334375,Eurysternus_caribaeus_gb-JQ972326.1:0.0000024241)0/44:0.0000024239,Eurysternus_caribaeus_gb-AY131893.1:0.0000024241)0/57:0.0000022453)0/24:0.0000279308)0/33:0.0040614351,Eurysternus_caribaeus_gb-JQ972576.1:0.0000022604)50/42:0.0029867922,((Eurysternus_caribaeus_gb-JQ972667.1:0.0088519052,((Eurysternus_caribaeus_gb-JQ972543.1:0.0027496817,((Eurysternus_caribaeus_gb-JQ972542.1:0.0054956518,Eurysternus_caribaeus_gb-JQ972544.1:0.0041621591)75.9/98:0.0013767098,Eurysternus_caribaeus_gb-JQ972278.1:0.0000022595)93.7/99:0.0041109866)77.4/84:0.0013726453,(Eurysternus_caribaeus_gb-JQ972548.1:0.0041460607,(Eurysternus_caribaeus_gb-JQ972549.1:0.0027334192,Eurysternus_caribaeus_gb-JQ972523.1:0.0000024241)75.9/98:0.0013413975)77.7/98:0.0013936371)0/56:0.0000011033)0/71:0.0013637563,(((Eurysternus_caribaeus_gb-JQ972212.1:0.0041969267,Eurysternus_caribaeus_gb-JQ972514.1:0.0027371020)78.3/86:0.0013774213,Eurysternus_caribaeus_gb-JQ972175.1:0.0000021130)0/77:0.0000029292,Eurysternus_caribaeus_gb-JQ972533.1:0.0055131110)6.3/40:0.0013663832)77.6/86:0.0024982991)100/86:0.0972479725,(Eurysternus_sp._gb-EF656740.1:0.0057996616,(Eurysternus_hamaticollis_gb-AY131894.1:0.0000023663,Eurysternus_hamaticollis_gb-EF656757.1:0.0000024241)94.2/100:0.0131649500)99.8/97:0.0584694251)88.9/87:0.0313291099,((((Eurysternus_velutinus_gb-AY131897.1:0.0000024241,Eurysternus_foedus_gb-JQ972327.1:0.0000024115)95.6/100:0.0056294646,Eurysternus_foedus_gb-JQ972174.1:0.0013610720)75/87:0.0013636947,(Eurysternus_foedus_gb-JQ972558.1:0.0013507932,Eurysternus_foedus_gb-JQ972553.1:0.0000020883)88.6/93:0.0027119421)78/91:0.0013656631,Eurysternus_foedus_gb-JQ972522.1:0.0000022443)100/98:0.1294185430)97/95:0.0442869415,(Eurysternus_sp._gb-JQ972552.1:0.0945959214,(Eurysternus_sp._gb-JQ972666.1:0.0885180091,((Eurysternus_plebejus_gb-AY131896.1:0.1135792295,(((((Eurysternus_magnus_gb-JQ972194.1:0.0098777072,Eurysternus_magnus_gb-JQ972263.1:0.0013240731)0/37:0.0000023283,Eurysternus_magnus_gb-JQ972673.1:0.0027204776)0/61:0.0000022938,Eurysternus_magnus_gb-JQ972264.1:0.0013597922)98/99:0.0067880486,(Eurysternus_magnus_gb-JQ972276.1:0.0000023470,(Eurysternus_magnus_gb-JQ972195.1:0.0013381122,Eurysternus_magnus_gb-JQ972267.1:0.0000024241)0/96:0.0000025237)0/66:0.0000023308)74.2/97:0.0013535116,Eurysternus_magnus_gb-JQ972266.1:0.0000025647)98.9/100:0.0447917774)22.7/89:0.0117149439,(((((Eurysternus_angustulus_gb-JQ972588.1:0.0000024241,Eurysternus_angustulus_gb-JQ972171.1:0.0000024241)0/79:0.0000024409,Eurysternus_angustulus_gb-JQ972164.1:0.0013866210)93.6/100:0.0041749966,(Eurysternus_angustulus_gb-JQ972587.1:0.0000024241,Eurysternus_angustulus_gb-JQ972598.1:0.0000024241)0/94:0.0000027241)0/82:0.0000025026,((Eurysternus_angustulus_gb-JQ972577.1:0.0017253049,Eurysternus_angustulus_gb-JQ972181.1:0.0087800019)0/56:0.0000027082,Eurysternus_angustulus_gb-JQ972257.1:0.0000024241)0/71:0.0000023982)14/83:0.0014685104,((Eurysternus_angustulus_gb-JQ972325.1:0.0000024171,Eurysternus_angustulus_gb-AY131892.1:0.0000020322)0/90:0.0000024492,Eurysternus_angustulus_gb-JQ972169.1:0.0000024241)0/58:0.0014782169)98.8/100:0.0365217842)96/99:0.0289925188)86.8/96:0.0195888807)0/54:0.0015462129)55.1/67:0.0094910687,Eurysternus_inflexus_gb-AY131895.1:0.1114172726)98.6/97:0.0514737080,(Copris_jacchoides_gb-JN804618.1:0.1428417314,(((Canthidium_centrale_gb-JQ972160.1:0.0040893690,Canthidium_centrale_gb-JQ972153.1:0.0013471294)78/99:0.0013627346,Canthidium_haroldi_gb-AY131868.1:0.0000024241)0/85:0.0000020199,Canthidium_centrale_gb-JQ972538.1:0.0027073981)100/99:0.1295416498)57.6/86:0.0255563992)81.2/58:0.0141416754,((Onthophagus_batesi_gb-EF656738.1:0.0870276269,Onthophagus_maki_gb-KC294242.1:0.0976305309)35.4/77:0.0149877707,(Onthophagus_melitaeus_gb-AY039349.1:0.0361377163,Onthophagus_ruficapillus_gb-AY039354.1:0.0543805308)91.4/99:0.0382109511)94.2/99:0.0308552525)43.2/42:0.0082410395)88.7/54:0.0175674697,((((Copris_sp._gb-AY131861.1:0.0997526201,Copris_amyntor_gb-AY131858.1:0.0603512557)96.2/96:0.0390447123,(((Copris_cornifrons_gb-JN804613.1:0.0946972068,Copris_aeneus_gb-AY131856.1:0.0776052701)87.2/89:0.0240431510,(Copris_lugubris_gb-AY131860.1:0.0497569080,(Copris_sp._gb-JQ972561.1:0.0000024241,Copris_sp._gb-JQ972556.1:0.0013947556)99.7/100:0.0409605091)98/100:0.0344437045)37.4/62:0.0085141483,(Copris_sinicus_gb-MN175225.1:0.0497674210,Copris_confucius_gb-EF188135.1:0.0183235908)99.4/100:0.0436434847)54/51:0.0047183758)54.2/53:0.0115949435,Copris_ramosiceps_gb-MN175226.1:0.0992398557)69.1/95:0.0084309559,(Copris_lunaris_gb-X88946.1:0.0059033268,Copris_hispanicus_gb-AY039366.1:0.0000022720)100/100:0.1296379058)99.2/99:0.0452638435)84.6/48:0.0078176411,Canthon_smaragdulus_gb-AY131816.1:0.1386941503)50.2/34:0.0030020301,(((((Canthidium_sp._gb-JQ972262.1:0.1130005444,Canthidium_guanacaste_gb-AY131867.1:0.0786094655)48.3/99:0.0215634737,Canthidium_rufinum_gb-AY131869.1:0.0706660385)98.1/99:0.0469803281,(Ateuchus_ecuadorense_gb-EF656741.1:0.0676620769,(Ateuchus_chrysopyge_gb-JQ972562.1:0.0116141786,((Ateuchus_chrysopyge_gb-JQ972133.1:0.0000024241,(Ateuchus_chrysopyge_gb-AY131866.1:0.0000024241,Ateuchus_chrysopyge_gb-JQ972322.1:0.0000024241)0/96:0.0000024239)0/89:0.0000024239,Ateuchus_chrysopyge_gb-JQ972622.1:0.0000024241)0/96:0.0000026230)99.7/100:0.0582896105)98.9/100:0.0493157427)83.3/96:0.0223646438,(Canthon_lamprimus_gb-EF656739.1:0.0865183439,(Canthon_cyanellus_gb-JQ972192.1:0.0007848549,(Canthon_cyanellus_gb-JQ972189.1:0.0000024241,Canthon_cyanellus_gb-JQ972190.1:0.0000024241)86.1/100:0.0061535460)99.3/100:0.0583544944)98.8/100:0.0499246604)58.3/51:0.0090819377,(((Canthon_indigaceus_gb-AY131814.1:0.0963728025,Canthon_luteicollis_gb-AY131815.1:0.0924153784)83.6/74:0.0281785029,Canthon_viridis_gb-AY131817.1:0.0671731171)0/22:0.0034881598,(Canthon_sp._gb-JQ972529.1:0.0333323759,(Canthon_subhyalinus_gb-JQ972144.1:0.0018114419,Canthon_subhyalinus_gb-JQ972157.1:0.0017373396)99.5/100:0.0441861198)99.5/100:0.0531893828)93.9/96:0.0269749166)93.4/62:0.0240681470)93.2/63:0.0539001481,Aphodius_satellitius_gb-AY039373.1:0.2350952585)92.4/94:0.0544914682,(Ataenius_monteithi_gb-EF656783.1:0.0000020006,Ataenius_monteithi_gb-AY132377.1:0.0000021687)99.9/100:0.1298448575)7.6/64:0.0304187898)89.5/99:0.0401609968,Ataenius_sp._gb-EF656782.1:0.1679476746)100/100:0.1161819476);
+
+CONSENSUS TREE
+--------------
+
+Consensus tree is constructed from 1000 bootstrap trees
+Log-likelihood of consensus tree: -20204.059074
+Robinson-Foulds distance between ML tree and consensus tree: 8
+
+Branches with support >0.000000% are kept (extended consensus)
+Branch lengths are optimized by maximum likelihood on original alignment
+Numbers in parentheses are bootstrap supports (%)
+
++--Ataenius_sciurus_gb-EF656779.1
+|
++--Ataenius_sciurus_gb-AY132379.1
+|
+|        +--Ataenius_strigatus_gb-EF656784.1
+|     +--| (100)
+|     |  +--Ataenius_strigatus_gb-AY132378.1
+|  +--| (99)
+|  |  |                    +--Ataenius_sp._gb-KF801882.1
+|  |  |                 +--| (62)
+|  |  |                 |  |  +--Tragiscus_dimidiatus_gb-AY131913.1
+|  |  |                 |  +--| (100)
+|  |  |                 |     +--Tragiscus_dimidiatus_gb-EF188227.1
+|  |  |              +--| (54)
+|  |  |              |  |                       +-----------------------------------------------------Ateuchus_sp._gb-EU162396.1
+|  |  |              |  |                    +--| (33)
+|  |  |              |  |                    |  |        +--Eurysternus_caribaeus_gb-JQ972513.1
+|  |  |              |  |                    |  |     +--| (49)
+|  |  |              |  |                    |  |     |  |                                                                          +--Ataenius_sp._gb-OP141658.2
+|  |  |              |  |                    |  |     |  |                                                                       +--| (100)
+|  |  |              |  |                    |  |     |  |                                                                       |  |           +--Ataenius_spretulus_gb-MG057824.1
+|  |  |              |  |                    |  |     |  |                                                                       |  |        +--| (100)
+|  |  |              |  |                    |  |     |  |                                                                       |  |        |  |  +--Ataenius_spretulus_gb-MG056319.1
+|  |  |              |  |                    |  |     |  |                                                                       |  |        |  +--| (69)
+|  |  |              |  |                    |  |     |  |                                                                       |  |        |     +--Ataenius_spretulus_gb-MG056201.1
+|  |  |              |  |                    |  |     |  |                                                                       |  |     +--| (60)
+|  |  |              |  |                    |  |     |  |                                                                       |  |     |  +--Ataenius_spretulus_gb-KM844909.1
+|  |  |              |  |                    |  |     |  |                                                                       |  |  +--| (99)
+|  |  |              |  |                    |  |     |  |                                                                       |  |  |  +--Ataenius_spretulus_gb-MG060910.1
+|  |  |              |  |                    |  |     |  |                                                                       |  +--| (100)
+|  |  |              |  |                    |  |     |  |                                                                       |     +--Ataenius_spretulus_gb-HM905906.1
+|  |  |              |  |                    |  |     |  |                                                                    +--| (99)
+|  |  |              |  |                    |  |     |  |                                                                    |  |  +--Ataenius_strigatus_gb-MH169635.1
+|  |  |              |  |                    |  |     |  |                                                                    |  +--| (100)
+|  |  |              |  |                    |  |     |  |                                                                    |     |  +--Ataenius_strigatus_gb-MG055219.1
+|  |  |              |  |                    |  |     |  |                                                                    |     +--| (100)
+|  |  |              |  |                    |  |     |  |                                                                    |        |  +--Ataenius_sp._gb-KR483874.1
+|  |  |              |  |                    |  |     |  |                                                                    |        +--| (100)
+|  |  |              |  |                    |  |     |  |                                                                    |           +--Ataenius_strigatus_gb-MG062629.1
+|  |  |              |  |                    |  |     |  |                                                                 +--| (88)
+|  |  |              |  |                    |  |     |  |                                                                 |  |     +--Ataenius_imbricatus_gb-EU156751.1
+|  |  |              |  |                    |  |     |  |                                                                 |  |  +--| (100)
+|  |  |              |  |                    |  |     |  |                                                                 |  |  |  +--Ataenius_imbricatus_gb-EU156750.1
+|  |  |              |  |                    |  |     |  |                                                                 |  +--| (91)
+|  |  |              |  |                    |  |     |  |                                                                 |     |     +--Ataenius_platensis_gb-HM433826.1
+|  |  |              |  |                    |  |     |  |                                                                 |     |  +--| (99)
+|  |  |              |  |                    |  |     |  |                                                                 |     |  |  +--Ataenius_platensis_gb-HM433823.1
+|  |  |              |  |                    |  |     |  |                                                                 |     +--| (99)
+|  |  |              |  |                    |  |     |  |                                                                 |        +--Ataenius_platensis_gb-HM433824.1
+|  |  |              |  |                    |  |     |  |                                                              +--| (63)
+|  |  |              |  |                    |  |     |  |                                                              |  |     +--Copris_signatus_gb-MT230950.1
+|  |  |              |  |                    |  |     |  |                                                              |  |  +--| (86)
+|  |  |              |  |                    |  |     |  |                                                              |  |  |  +--Ateuchus_sp._gb-EU162435.1
+|  |  |              |  |                    |  |     |  |                                                              |  +--| (95)
+|  |  |              |  |                    |  |     |  |                                                              |     |  +--Copris_tripartitus_gb-MG701094.1
+|  |  |              |  |                    |  |     |  |                                                              |     +--| (100)
+|  |  |              |  |                    |  |     |  |                                                              |        |  +--Copris_tripartitus_gb-MG701061.1
+|  |  |              |  |                    |  |     |  |                                                              |        +--| (100)
+|  |  |              |  |                    |  |     |  |                                                              |           |  +--Copris_tripartitus_gb-MG701093.1
+|  |  |              |  |                    |  |     |  |                                                              |           +--| (100)
+|  |  |              |  |                    |  |     |  |                                                              |              +--Copris_tripartitus_gb-MG701087.1
+|  |  |              |  |                    |  |     |  |                                                           +--| (83)
+|  |  |              |  |                    |  |     |  |                                                           |  |  +--Eurysternus_sp._gb-MW200811.1
+|  |  |              |  |                    |  |     |  |                                                           |  +--| (100)
+|  |  |              |  |                    |  |     |  |                                                           |     |  +--Eurysternus_sp._gb-MW200893.1
+|  |  |              |  |                    |  |     |  |                                                           |     +--| (98)
+|  |  |              |  |                    |  |     |  |                                                           |        +--Eurysternus_sp._gb-MW200516.1
+|  |  |              |  |                    |  |     |  |                                                        +--| (81)
+|  |  |              |  |                    |  |     |  |                                                        |  |  +--Digitonthophagus_bonasus_gb-MW343476.1
+|  |  |              |  |                    |  |     |  |                                                        |  +--| (98)
+|  |  |              |  |                    |  |     |  |                                                        |     |  +--Digitonthophagus_gazella_gb-HQ984465.1
+|  |  |              |  |                    |  |     |  |                                                        |     +--| (100)
+|  |  |              |  |                    |  |     |  |                                                        |        +--Digitonthophagus_gazella_gb-MN345971.1
+|  |  |              |  |                    |  |     |  |                                                     +--| (79)
+|  |  |              |  |                    |  |     |  |                                                     |  +--Onthophagus_lemur_gb-LN554677.1
+|  |  |              |  |                    |  |     |  +-----------------------------------------------------| (100)
+|  |  |              |  |                    |  |     |                                                        +--Onthophagus_coenobita_gb-KM441496.1
+|  |  |              |  |                    |  |  +--| (26)
+|  |  |              |  |                    |  |  |  |     +--Eurysternus_caribaeus_gb-JQ972554.1
+|  |  |              |  |                    |  |  |  |  +--| (20)
+|  |  |              |  |                    |  |  |  |  |  +--Eurysternus_caribaeus_gb-JQ972148.1
+|  |  |              |  |                    |  |  |  +--| (34)
+|  |  |              |  |                    |  |  |     +--Eurysternus_caribaeus_gb-JQ972521.1
+|  |  |              |  |                    |  +--| (24)
+|  |  |              |  |                    |     |     +--Eurysternus_caribaeus_gb-JQ972534.1
+|  |  |              |  |                    |     |  +--| (44)
+|  |  |              |  |                    |     |  |  +--Eurysternus_caribaeus_gb-JQ972326.1
+|  |  |              |  |                    |     +--| (57)
+|  |  |              |  |                    |        +--Eurysternus_caribaeus_gb-AY131893.1
+|  |  |              |  |                 +--| (86)
+|  |  |              |  |                 |  |        +--Eurysternus_caribaeus_gb-JQ972667.1
+|  |  |              |  |                 |  |     +--| (71)
+|  |  |              |  |                 |  |     |  |     +--Eurysternus_caribaeus_gb-JQ972543.1
+|  |  |              |  |                 |  |     |  |  +--| (84)
+|  |  |              |  |                 |  |     |  |  |  |     +--Eurysternus_caribaeus_gb-JQ972542.1
+|  |  |              |  |                 |  |     |  |  |  |  +--| (98)
+|  |  |              |  |                 |  |     |  |  |  |  |  +--Eurysternus_caribaeus_gb-JQ972544.1
+|  |  |              |  |                 |  |     |  |  |  +--| (99)
+|  |  |              |  |                 |  |     |  |  |     +--Eurysternus_caribaeus_gb-JQ972278.1
+|  |  |              |  |                 |  |     |  +--| (56)
+|  |  |              |  |                 |  |     |     |  +--Eurysternus_caribaeus_gb-JQ972548.1
+|  |  |              |  |                 |  |     |     +--| (98)
+|  |  |              |  |                 |  |     |        |  +--Eurysternus_caribaeus_gb-JQ972549.1
+|  |  |              |  |                 |  |     |        +--| (98)
+|  |  |              |  |                 |  |     |           +--Eurysternus_caribaeus_gb-JQ972523.1
+|  |  |              |  |                 |  |  +--| (86)
+|  |  |              |  |                 |  |  |  |        +--Eurysternus_caribaeus_gb-JQ972212.1
+|  |  |              |  |                 |  |  |  |     +--| (86)
+|  |  |              |  |                 |  |  |  |     |  +--Eurysternus_caribaeus_gb-JQ972514.1
+|  |  |              |  |                 |  |  |  |  +--| (77)
+|  |  |              |  |                 |  |  |  |  |  +--Eurysternus_caribaeus_gb-JQ972175.1
+|  |  |              |  |                 |  |  |  +--| (40)
+|  |  |              |  |                 |  |  |     +--Eurysternus_caribaeus_gb-JQ972533.1
+|  |  |              |  |                 |  +--| (47)
+|  |  |              |  |                 |     +--Eurysternus_caribaeus_gb-JQ972576.1
+|  |  |              |  |              +--| (87)
+|  |  |              |  |              |  |  +--Eurysternus_sp._gb-EF656740.1
+|  |  |              |  |              |  +--| (97)
+|  |  |              |  |              |     |  +--Eurysternus_hamaticollis_gb-AY131894.1
+|  |  |              |  |              |     +--| (100)
+|  |  |              |  |              |        +--Eurysternus_hamaticollis_gb-EF656757.1
+|  |  |              |  |           +--| (95)
+|  |  |              |  |           |  |           +--Eurysternus_velutinus_gb-AY131897.1
+|  |  |              |  |           |  |        +--| (100)
+|  |  |              |  |           |  |        |  +--Eurysternus_foedus_gb-JQ972327.1
+|  |  |              |  |           |  |     +--| (87)
+|  |  |              |  |           |  |     |  +--Eurysternus_foedus_gb-JQ972174.1
+|  |  |              |  |           |  |  +--| (91)
+|  |  |              |  |           |  |  |  |  +--Eurysternus_foedus_gb-JQ972558.1
+|  |  |              |  |           |  |  |  +--| (93)
+|  |  |              |  |           |  |  |     +--Eurysternus_foedus_gb-JQ972553.1
+|  |  |              |  |           |  +--| (98)
+|  |  |              |  |           |     +--Eurysternus_foedus_gb-JQ972522.1
+|  |  |              |  |        +--| (67)
+|  |  |              |  |        |  |  +--Eurysternus_sp._gb-JQ972552.1
+|  |  |              |  |        |  +--| (54)
+|  |  |              |  |        |     |  +--Eurysternus_sp._gb-JQ972666.1
+|  |  |              |  |        |     +--| (96)
+|  |  |              |  |        |        |     +--Eurysternus_plebejus_gb-AY131896.1
+|  |  |              |  |        |        |  +--| (89)
+|  |  |              |  |        |        |  |  |              +--Eurysternus_magnus_gb-JQ972194.1
+|  |  |              |  |        |        |  |  |           +--| (37)
+|  |  |              |  |        |        |  |  |           |  +--Eurysternus_magnus_gb-JQ972263.1
+|  |  |              |  |        |        |  |  |        +--| (61)
+|  |  |              |  |        |        |  |  |        |  +--Eurysternus_magnus_gb-JQ972673.1
+|  |  |              |  |        |        |  |  |     +--| (99)
+|  |  |              |  |        |        |  |  |     |  +--Eurysternus_magnus_gb-JQ972264.1
+|  |  |              |  |        |        |  |  |  +--| (97)
+|  |  |              |  |        |        |  |  |  |  |  +--Eurysternus_magnus_gb-JQ972276.1
+|  |  |              |  |        |        |  |  |  |  +--| (66)
+|  |  |              |  |        |        |  |  |  |     |  +--Eurysternus_magnus_gb-JQ972195.1
+|  |  |              |  |        |        |  |  |  |     +--| (96)
+|  |  |              |  |        |        |  |  |  |        +--Eurysternus_magnus_gb-JQ972267.1
+|  |  |              |  |        |        |  |  +--| (100)
+|  |  |              |  |        |        |  |     +--Eurysternus_magnus_gb-JQ972266.1
+|  |  |              |  |        |        +--| (99)
+|  |  |              |  |        |           |              +--Eurysternus_angustulus_gb-JQ972588.1
+|  |  |              |  |        |           |           +--| (79)
+|  |  |              |  |        |           |           |  +--Eurysternus_angustulus_gb-JQ972171.1
+|  |  |              |  |        |           |        +--| (100)
+|  |  |              |  |        |           |        |  +--Eurysternus_angustulus_gb-JQ972164.1
+|  |  |              |  |        |           |     +--| (82)
+|  |  |              |  |        |           |     |  |                       +**Eurysternus_angustulus_gb-JQ972587.1
+|  |  |              |  |        |           |     |  |                    +**|
+|  |  |              |  |        |           |     |  |                    |  +**Eurysternus_angustulus_gb-JQ972255.1
+|  |  |              |  |        |           |     |  |                 +**|
+|  |  |              |  |        |           |     |  |                 |  +**Eurysternus_angustulus_gb-JQ972183.1
+|  |  |              |  |        |           |     |  |              +**|
+|  |  |              |  |        |           |     |  |              |  +**Eurysternus_angustulus_gb-JQ972254.1
+|  |  |              |  |        |           |     |  |           +**|
+|  |  |              |  |        |           |     |  |           |  +**Eurysternus_angustulus_gb-JQ972258.1
+|  |  |              |  |        |           |     |  |        +**|
+|  |  |              |  |        |           |     |  |        |  +**Eurysternus_angustulus_gb-JQ972265.1
+|  |  |              |  |        |           |     |  |     +**|
+|  |  |              |  |        |           |     |  |     |  +**Eurysternus_angustulus_gb-JQ972256.1
+|  |  |              |  |        |           |     |  |  +--|
+|  |  |              |  |        |           |     |  |  |  +**Eurysternus_angustulus_gb-JQ972259.1
+|  |  |              |  |        |           |     |  +--| (94)
+|  |  |              |  |        |           |     |     +--Eurysternus_angustulus_gb-JQ972598.1
+|  |  |              |  |        |           |  +--| (83)
+|  |  |              |  |        |           |  |  |     +--Eurysternus_angustulus_gb-JQ972577.1
+|  |  |              |  |        |           |  |  |  +--| (56)
+|  |  |              |  |        |           |  |  |  |  +--Eurysternus_angustulus_gb-JQ972181.1
+|  |  |              |  |        |           |  |  +--| (71)
+|  |  |              |  |        |           |  |     +--Eurysternus_angustulus_gb-JQ972257.1
+|  |  |              |  |        |           +--| (100)
+|  |  |              |  |        |              |     +--Eurysternus_angustulus_gb-JQ972325.1
+|  |  |              |  |        |              |  +--| (90)
+|  |  |              |  |        |              |  |  +--Eurysternus_angustulus_gb-AY131892.1
+|  |  |              |  |        |              +--| (58)
+|  |  |              |  |        |                 +--Eurysternus_angustulus_gb-JQ972169.1
+|  |  |              |  |     +--| (97)
+|  |  |              |  |     |  +--Eurysternus_inflexus_gb-AY131895.1
+|  |  |              |  |  +--| (58)
+|  |  |              |  |  |  |  +--Copris_jacchoides_gb-JN804618.1
+|  |  |              |  |  |  +--| (86)
+|  |  |              |  |  |     |        +--Canthidium_centrale_gb-JQ972160.1
+|  |  |              |  |  |     |     +--| (99)
+|  |  |              |  |  |     |     |  +--Canthidium_centrale_gb-JQ972153.1
+|  |  |              |  |  |     |  +--| (85)
+|  |  |              |  |  |     |  |  +--Canthidium_haroldi_gb-AY131868.1
+|  |  |              |  |  |     +--| (99)
+|  |  |              |  |  |        +--Canthidium_centrale_gb-JQ972538.1
+|  |  |              |  +--| (42)
+|  |  |              |     |     +--Onthophagus_batesi_gb-EF656738.1
+|  |  |              |     |  +--| (77)
+|  |  |              |     |  |  +--Onthophagus_maki_gb-KC294242.1
+|  |  |              |     +--| (99)
+|  |  |              |        |  +--Onthophagus_melitaeus_gb-AY039349.1
+|  |  |              |        +--| (99)
+|  |  |              |           +--Onthophagus_ruficapillus_gb-AY039354.1
+|  |  |           +--| (48)
+|  |  |           |  |           +--Copris_sp._gb-AY131861.1
+|  |  |           |  |        +--| (96)
+|  |  |           |  |        |  +--Copris_amyntor_gb-AY131858.1
+|  |  |           |  |     +--| (53)
+|  |  |           |  |     |  |        +--Copris_cornifrons_gb-JN804613.1
+|  |  |           |  |     |  |     +--| (89)
+|  |  |           |  |     |  |     |  +--Copris_aeneus_gb-AY131856.1
+|  |  |           |  |     |  |  +--| (62)
+|  |  |           |  |     |  |  |  |  +--Copris_lugubris_gb-AY131860.1
+|  |  |           |  |     |  |  |  +--| (100)
+|  |  |           |  |     |  |  |     |  +--Copris_sp._gb-JQ972561.1
+|  |  |           |  |     |  |  |     +--| (100)
+|  |  |           |  |     |  |  |        +--Copris_sp._gb-JQ972556.1
+|  |  |           |  |     |  +--| (51)
+|  |  |           |  |     |     |  +--Copris_sinicus_gb-MN175225.1
+|  |  |           |  |     |     +--| (100)
+|  |  |           |  |     |        +--Copris_confucius_gb-EF188135.1
+|  |  |           |  |  +--| (95)
+|  |  |           |  |  |  +--Copris_ramosiceps_gb-MN175226.1
+|  |  |           |  +--| (99)
+|  |  |           |     |  +--Copris_lunaris_gb-X88946.1
+|  |  |           |     +--| (100)
+|  |  |           |        +--Copris_hispanicus_gb-AY039366.1
+|  |  |        +--| (34)
+|  |  |        |  +--Canthon_smaragdulus_gb-AY131816.1
+|  |  |     +--| (63)
+|  |  |     |  |              +--Canthidium_sp._gb-JQ972262.1
+|  |  |     |  |           +--| (99)
+|  |  |     |  |           |  +--Canthidium_guanacaste_gb-AY131867.1
+|  |  |     |  |        +--| (99)
+|  |  |     |  |        |  +--Canthidium_rufinum_gb-AY131869.1
+|  |  |     |  |     +--| (96)
+|  |  |     |  |     |  |  +--Ateuchus_ecuadorense_gb-EF656741.1
+|  |  |     |  |     |  +--| (100)
+|  |  |     |  |     |     |  +--Ateuchus_chrysopyge_gb-JQ972562.1
+|  |  |     |  |     |     +--| (100)
+|  |  |     |  |     |        |     +--Ateuchus_chrysopyge_gb-JQ972133.1
+|  |  |     |  |     |        |  +--| (89)
+|  |  |     |  |     |        |  |  |  +--Ateuchus_chrysopyge_gb-AY131866.1
+|  |  |     |  |     |        |  |  +--| (96)
+|  |  |     |  |     |        |  |     +--Ateuchus_chrysopyge_gb-JQ972322.1
+|  |  |     |  |     |        +--| (96)
+|  |  |     |  |     |           +--Ateuchus_chrysopyge_gb-JQ972622.1
+|  |  |     |  |  +--| (51)
+|  |  |     |  |  |  |  +--Canthon_lamprimus_gb-EF656739.1
+|  |  |     |  |  |  +--| (100)
+|  |  |     |  |  |     |  +--Canthon_cyanellus_gb-JQ972192.1
+|  |  |     |  |  |     +--| (100)
+|  |  |     |  |  |        |  +--Canthon_cyanellus_gb-JQ972189.1
+|  |  |     |  |  |        +--| (100)
+|  |  |     |  |  |           +--Canthon_cyanellus_gb-JQ972190.1
+|  |  |     |  +--| (62)
+|  |  |     |     |        +--Canthon_indigaceus_gb-AY131814.1
+|  |  |     |     |     +--| (74)
+|  |  |     |     |     |  +--Canthon_luteicollis_gb-AY131815.1
+|  |  |     |     |  +--| (52)
+|  |  |     |     |  |  |  +--Canthon_sp._gb-JQ972529.1
+|  |  |     |     |  |  +--| (100)
+|  |  |     |     |  |     |  +--Canthon_subhyalinus_gb-JQ972144.1
+|  |  |     |     |  |     +--| (100)
+|  |  |     |     |  |        +--Canthon_subhyalinus_gb-JQ972157.1
+|  |  |     |     +--| (96)
+|  |  |     |        +--Canthon_viridis_gb-AY131817.1
+|  |  |  +--| (94)
+|  |  |  |  +--Aphodius_satellitius_gb-AY039373.1
+|  |  +--| (64)
+|  |     |  +--Ataenius_monteithi_gb-EF656783.1
+|  |     +--| (100)
+|  |        +--Ataenius_monteithi_gb-AY132377.1
++--| (100)
+   +--Ataenius_sp._gb-EF656782.1
+
+
+Consensus tree in newick format: 
+
+(Ataenius_sciurus_gb-EF656779.1:0.0000020059,Ataenius_sciurus_gb-AY132379.1:0.0000020059,(((Ataenius_strigatus_gb-EF656784.1:0.0000020059,Ataenius_strigatus_gb-AY132378.1:0.0000025141)100:0.1468783800,(((((((Ataenius_sp._gb-KF801882.1:0.2866784275,(Tragiscus_dimidiatus_gb-AY131913.1:0.0000025141,Tragiscus_dimidiatus_gb-EF188227.1:0.0000020059)100:0.1495843723)62:0.0363811041,((((((((Ateuchus_sp._gb-EU162396.1:9.9999987035,(((Eurysternus_caribaeus_gb-JQ972513.1:0.0000023730,((((((((Ataenius_sp._gb-OP141658.2:0.0037789025,((((Ataenius_spretulus_gb-MG057824.1:0.0036270334,(Ataenius_spretulus_gb-MG056319.1:0.0017933953,Ataenius_spretulus_gb-MG056201.1:0.0000020059)69:0.0000020059)100:0.0017626762,Ataenius_spretulus_gb-KM844909.1:0.0042094680)60:0.0000020059,Ataenius_spretulus_gb-MG060910.1:0.0000020059)99:0.0020973664,Ataenius_spretulus_gb-HM905906.1:0.0000020059)100:0.0174285929)100:0.0262988006,(Ataenius_strigatus_gb-MH169635.1:0.0035482237,(Ataenius_strigatus_gb-MG055219.1:0.0066527717,(Ataenius_sp._gb-KR483874.1:0.0000020059,Ataenius_strigatus_gb-MG062629.1:0.0000020059)100:0.0069239545)100:0.0299499183)100:0.0359365223)99:0.1048074584,((Ataenius_imbricatus_gb-EU156751.1:0.0031049171,Ataenius_imbricatus_gb-EU156750.1:0.0084540498)100:0.1136908126,((Ataenius_platensis_gb-HM433826.1:0.0051835844,Ataenius_platensis_gb-HM433823.1:0.0000020059)99:0.0015802629,Ataenius_platensis_gb-HM433824.1:0.0000020059)99:0.0958792508)91:0.0187704013)88:0.0490085554,((Copris_signatus_gb-MT230950.1:0.1270470189,Ateuchus_sp._gb-EU162435.1:0.1166178261)86:0.0317324948,(Copris_tripartitus_gb-MG701094.1:0.0000020059,(Copris_tripartitus_gb-MG701061.1:0.0016256378,(Copris_tripartitus_gb-MG701093.1:0.0032862684,Copris_tripartitus_gb-MG701087.1:0.0000020059)100:0.0049383125)100:0.0016426130)100:0.0769992610)95:0.0446838703)63:0.0366320195,(Eurysternus_sp._gb-MW200811.1:0.1094497203,(Eurysternus_sp._gb-MW200893.1:0.1102445305,Eurysternus_sp._gb-MW200516.1:0.1133607791)98:0.0296409817)100:0.0606745265)83:0.0296661418,(Digitonthophagus_bonasus_gb-MW343476.1:0.0732870669,(Digitonthophagus_gazella_gb-HQ984465.1:0.0427631242,Digitonthophagus_gazella_gb-MN345971.1:0.0511015495)100:0.0237771680)98:0.0318899998)81:0.0675889636,Onthophagus_lemur_gb-LN554677.1:0.0883716858)79:0.0415731984,Onthophagus_coenobita_gb-KM441496.1:0.0000022597)100:9.9999986250)49:0.0026873656,((Eurysternus_caribaeus_gb-JQ972554.1:0.0000020059,Eurysternus_caribaeus_gb-JQ972148.1:0.0000020059)20:0.0000020059,Eurysternus_caribaeus_gb-JQ972521.1:0.0000020059)34:0.0000020059)26:0.0000022862,((Eurysternus_caribaeus_gb-JQ972534.1:0.0026859370,Eurysternus_caribaeus_gb-JQ972326.1:0.0000020059)44:0.0000020059,Eurysternus_caribaeus_gb-AY131893.1:0.0000020080)57:0.0000025141)24:0.0024826251)33:0.0000022720,(((Eurysternus_caribaeus_gb-JQ972667.1:0.0087008713,((Eurysternus_caribaeus_gb-JQ972543.1:0.0027015807,((Eurysternus_caribaeus_gb-JQ972542.1:0.0054014359,Eurysternus_caribaeus_gb-JQ972544.1:0.0040898275)98:0.0013521782,Eurysternus_caribaeus_gb-JQ972278.1:0.0000020059)99:0.0040401312)84:0.0013477234,(Eurysternus_caribaeus_gb-JQ972548.1:0.0040741758,(Eurysternus_caribaeus_gb-JQ972549.1:0.0026858689,Eurysternus_caribaeus_gb-JQ972523.1:0.0000020059)98:0.0013175578)98:0.0013686787)56:0.0004335399)71:0.0009052820,(((Eurysternus_caribaeus_gb-JQ972212.1:0.0041247480,Eurysternus_caribaeus_gb-JQ972514.1:0.0026893513)86:0.0013530075,Eurysternus_caribaeus_gb-JQ972175.1:0.0000020059)77:0.0000020080,Eurysternus_caribaeus_gb-JQ972533.1:0.0054186778)40:0.0013410450)86:0.0054181885,Eurysternus_caribaeus_gb-JQ972576.1:0.0000020080)47:0.0015427291)86:0.0973247668,(Eurysternus_sp._gb-EF656740.1:0.0057300188,(Eurysternus_hamaticollis_gb-AY131894.1:0.0000025196,Eurysternus_hamaticollis_gb-EF656757.1:0.0000020059)100:0.0129102774)97:0.0569035338)87:0.0307239238,((((Eurysternus_velutinus_gb-AY131897.1:0.0000020059,Eurysternus_foedus_gb-JQ972327.1:0.0000020059)100:0.0055323146,Eurysternus_foedus_gb-JQ972174.1:0.0013370965)87:0.0013387297,(Eurysternus_foedus_gb-JQ972558.1:0.0013265636,Eurysternus_foedus_gb-JQ972553.1:0.0000020059)93:0.0026651837)91:0.0013412688,Eurysternus_foedus_gb-JQ972522.1:0.0000020059)98:0.1258858358)95:0.0436148543,(Eurysternus_sp._gb-JQ972552.1:0.0923399246,(Eurysternus_sp._gb-JQ972666.1:0.0867080771,((Eurysternus_plebejus_gb-AY131896.1:0.1109653241,(((((Eurysternus_magnus_gb-JQ972194.1:0.0097118943,Eurysternus_magnus_gb-JQ972263.1:0.0005160249)37:0.0007864125,Eurysternus_magnus_gb-JQ972673.1:0.0026743629)61:0.0000020059,Eurysternus_magnus_gb-JQ972264.1:0.0013356466)99:0.0066725360,(Eurysternus_magnus_gb-JQ972276.1:0.0000020059,(Eurysternus_magnus_gb-JQ972195.1:0.0005160249,Eurysternus_magnus_gb-JQ972267.1:0.0000020059)96:0.0007998143)66:0.0000020059)97:0.0013292039,Eurysternus_magnus_gb-JQ972266.1:0.0000020059)100:0.0439655205)89:0.0114370161,(((((Eurysternus_angustulus_gb-JQ972588.1:0.0000020059,Eurysternus_angustulus_gb-JQ972171.1:0.0000020059)79:0.0000020059,Eurysternus_angustulus_gb-JQ972164.1:0.0013615048)100:0.0041027401,((((((((Eurysternus_angustulus_gb-JQ972587.1:0.0000000000,Eurysternus_angustulus_gb-JQ972255.1:0.0000000000):0.0000000000,Eurysternus_angustulus_gb-JQ972183.1:0.0000000000):0.0000000000,Eurysternus_angustulus_gb-JQ972254.1:0.0000000000):0.0000000000,Eurysternus_angustulus_gb-JQ972258.1:0.0000000000):0.0000000000,Eurysternus_angustulus_gb-JQ972265.1:0.0000000000):0.0000000000,Eurysternus_angustulus_gb-JQ972256.1:0.0000000000):0.0000000000,Eurysternus_angustulus_gb-JQ972259.1:0.0000000000):0.0000020059,Eurysternus_angustulus_gb-JQ972598.1:0.0000020059)94:0.0000020059)82:0.0000021362,((Eurysternus_angustulus_gb-JQ972577.1:0.0016967638,Eurysternus_angustulus_gb-JQ972181.1:0.0030715898)56:0.0035090202,Eurysternus_angustulus_gb-JQ972257.1:0.0000020059)71:0.0019727719)83:0.0014404887,((Eurysternus_angustulus_gb-JQ972325.1:0.0000020059,Eurysternus_angustulus_gb-AY131892.1:0.0000020059)90:0.0004674149,Eurysternus_angustulus_gb-JQ972169.1:0.0000020059)58:0.0009830060)100:0.0359101984)99:0.0281189026)96:0.0191641525)54:0.0016825025)67:0.0092298699,Eurysternus_inflexus_gb-AY131895.1:0.1090697235)97:0.0506364930,(Copris_jacchoides_gb-JN804618.1:0.1393701386,(((Canthidium_centrale_gb-JQ972160.1:0.0040195423,Canthidium_centrale_gb-JQ972153.1:0.0013235302)99:0.0013386435,Canthidium_haroldi_gb-AY131868.1:0.0000020059)85:0.0000020080,Canthidium_centrale_gb-JQ972538.1:0.0026610037)99:0.1258179260)86:0.0250512537)58:0.0139920362,((Onthophagus_batesi_gb-EF656738.1:0.0851070238,Onthophagus_maki_gb-KC294242.1:0.0954920437)77:0.0145330979,(Onthophagus_melitaeus_gb-AY039349.1:0.0357957859,Onthophagus_ruficapillus_gb-AY039354.1:0.0537372009)99:0.0378661567)99:0.0303779187)42:0.0080198651)54:0.0173937318,((((Copris_sp._gb-AY131861.1:0.0975061075,Copris_amyntor_gb-AY131858.1:0.0590500000)96:0.0383783312,(((Copris_cornifrons_gb-JN804613.1:0.0926762481,Copris_aeneus_gb-AY131856.1:0.0759472884)89:0.0235149165,(Copris_lugubris_gb-AY131860.1:0.0487756643,(Copris_sp._gb-JQ972561.1:0.0000020059,Copris_sp._gb-JQ972556.1:0.0013709461)100:0.0401375329)100:0.0337669878)62:0.0083649173,(Copris_sinicus_gb-MN175225.1:0.0487278627,Copris_confucius_gb-EF188135.1:0.0180841460)100:0.0427788187)51:0.0045298036)53:0.0112951109,Copris_ramosiceps_gb-MN175226.1:0.0971565788)95:0.0085783359,(Copris_lunaris_gb-X88946.1:0.0057724534,Copris_hispanicus_gb-AY039366.1:0.0000028205)100:0.1275219148)99:0.0446917342)48:0.0077569238,Canthon_smaragdulus_gb-AY131816.1:0.1349668475)34:0.0032011234,(((((Canthidium_sp._gb-JQ972262.1:0.1104960478,Canthidium_guanacaste_gb-AY131867.1:0.0766965136)99:0.0212103405,Canthidium_rufinum_gb-AY131869.1:0.0692015213)99:0.0460162996,(Ateuchus_ecuadorense_gb-EF656741.1:0.0658149673,(Ateuchus_chrysopyge_gb-JQ972562.1:0.0114171097,((Ateuchus_chrysopyge_gb-JQ972133.1:0.0000020059,(Ateuchus_chrysopyge_gb-AY131866.1:0.0000020080,Ateuchus_chrysopyge_gb-JQ972322.1:0.0000020059)96:0.0000020080)89:0.0000020080,Ateuchus_chrysopyge_gb-JQ972622.1:0.0000020059)96:0.0000024008)100:0.0573974162)100:0.0481569798)96:0.0222677262,(Canthon_lamprimus_gb-EF656739.1:0.0851650596,(Canthon_cyanellus_gb-JQ972192.1:0.0008853095,(Canthon_cyanellus_gb-JQ972189.1:0.0000020059,Canthon_cyanellus_gb-JQ972190.1:0.0000020059)100:0.0059366013)100:0.0565195157)100:0.0486740381)51:0.0086937689,(((Canthon_indigaceus_gb-AY131814.1:0.0936149555,Canthon_luteicollis_gb-AY131815.1:0.0907607107)74:0.0276858350,(Canthon_sp._gb-JQ972529.1:0.0324323453,(Canthon_subhyalinus_gb-JQ972144.1:0.0017829489,Canthon_subhyalinus_gb-JQ972157.1:0.0017066501)100:0.0435546736)100:0.0517094572)52:0.0027129288,Canthon_viridis_gb-AY131817.1:0.0663590671)96:0.0267113586)62:0.0237499138)63:0.0530135619,Aphodius_satellitius_gb-AY039373.1:0.2311358126)94:0.0525772923,(Ataenius_monteithi_gb-EF656783.1:0.0000020059,Ataenius_monteithi_gb-AY132377.1:0.0000020059)100:0.1270807112)64:0.0300531147)99:0.0391256499,Ataenius_sp._gb-EF656782.1:0.1639850070)100:0.1134198075);
+
+TIME STAMP
+----------
+
+Date and time: Thu Mar  9 19:23:50 2023
+Total CPU time used: 473.851152 seconds (0h:7m:53s)
+Total wall-clock time used: 459.1716953 seconds (0h:7m:39s)
+
